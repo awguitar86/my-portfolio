@@ -219,6 +219,9 @@ body {
     border-bottom: solid 1px #5AAC45;
     font-size: 13pt; }
 
+.projects-bottom-image {
+  display: none; }
+
 .about {
   width: 100vw;
   height: 800px;

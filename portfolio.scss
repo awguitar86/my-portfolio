@@ -280,6 +280,10 @@ body {
     }
 }
 
+.projects-bottom-image {
+    display: none;
+}
+
 
 
 .about {
@@ -353,3 +357,14 @@ body {
         height: auto;
     }
 }
+
+
+// @media only screen and (max-width: 1500px) {
+//     .project-top-body {
+//         width: 95vw;
+//     }
+
+//     .project-bottom-body {
+//         width: 95vw;
+//     }
+// }
