@@ -1,0 +1,285 @@
+body {
+  width: 100vw; }
+
+.home {
+  width: 100vw;
+  height: 900px;
+  background-image: url(./images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: -8px;
+  margin-top: -8px; }
+
+.home-cover {
+  display: block;
+  width: 100vw;
+  height: 900px;
+  background: #040404B3; }
+  .home-cover header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .home-cover header div {
+      width: 40vw;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .home-cover header div a {
+        text-decoration: none; }
+      .home-cover header div h3 {
+        margin: 0;
+        color: #D7D9CE;
+        font-family: Montserrat;
+        font-weight: normal; }
+
+.home-body {
+  width: 100vw;
+  height: 840px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.home-body-content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px; }
+  .home-body-content p {
+    color: #D7D9CE;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 44pt;
+    margin: 0; }
+  .home-body-content div {
+    width: 550px;
+    border-top: solid 2px #D7D9CE;
+    margin: 0; }
+  .home-body-content h1 {
+    color: #D7D9CE;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0; }
+
+.skills {
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -8px;
+  margin-bottom: 50px; }
+  .skills h2 {
+    color: #040404;
+    font-family: Montserrat;
+    font-weight: normal;
+    border-bottom: solid #040404 1px; }
+
+.skills-logos {
+  width: 1000px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 140px);
+  border: solid 1px #04040480;
+  border-radius: 5px;
+  padding: 40px 20px 40px 20px; }
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .skill-item img {
+    width: auto;
+    height: 80px; }
+  .skill-item h4 {
+    text-align: center;
+    font-weight: normal;
+    font-family: Montserrat; }
+
+.item1 img {
+  border-radius: 12pc; }
+
+.projects-top {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #040404;
+  margin-left: -8px; }
+  .projects-top h2 {
+    margin-top: 50px; }
+    .projects-top h2 a {
+      color: #D7D9CE;
+      font-family: Montserrat;
+      font-weight: normal;
+      border-bottom: solid #D7D9CE 1px; }
+
+.project-top-body {
+  width: 1400px;
+  height: 470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.projects-top-left {
+  height: 300px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+  .projects-top-left h2 {
+    color: #907AD6;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0; }
+  .projects-top-left p {
+    color: #D7D9CE;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0;
+    line-height: 16pt; }
+
+.projects-top-links {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start; }
+  .projects-top-links a {
+    color: #907AD6;
+    cursor: pointer;
+    font-family: Montserrat;
+    margin-right: 50px;
+    text-decoration: none;
+    border-bottom: solid 1px #907AD6;
+    font-size: 13pt; }
+
+.projects-top-right img {
+  width: auto;
+  height: 470px; }
+
+.projects-bottom {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: -8px; }
+
+.project-bottom-body {
+  width: 1400px;
+  height: 470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.projects-bottom-left img {
+  width: auto;
+  height: 470px; }
+
+.projects-bottom-right {
+  height: 300px;
+  width: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around; }
+  .projects-bottom-right h2 {
+    color: #5AAC45;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0; }
+  .projects-bottom-right p {
+    color: #040404;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0;
+    line-height: 16pt; }
+
+.projects-bottom-links {
+  width: 610px;
+  display: flex;
+  justify-content: flex-start; }
+  .projects-bottom-links a {
+    color: #5AAC45;
+    cursor: pointer;
+    font-family: Montserrat;
+    margin-right: 50px;
+    text-decoration: none;
+    border-bottom: solid 1px #5AAC45;
+    font-size: 13pt; }
+
+.about {
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: #040404;
+  margin-left: -8px; }
+  .about h2 {
+    color: #D7D9CE;
+    font-family: Montserrat;
+    font-weight: normal;
+    border-bottom: solid #D7D9CE 1px;
+    margin: 0; }
+
+.about-info {
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  height: 340px; }
+  .about-info img {
+    width: 230px;
+    height: auto;
+    border-radius: 12pc; }
+  .about-info p {
+    color: #D7D9CE;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 16pt;
+    margin: 0; }
+
+.contact {
+  width: 200px;
+  height: 40px;
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #D7D9CE;
+  cursor: pointer;
+  font-size: 14pt; }
+  .contact:hover {
+    transition: ease-in-out 0.3s;
+    width: 198px;
+    height: 38px;
+    border: solid 2px #3E92CC;
+    color: #3E92CC; }
+
+.social-media {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .social-media img {
+    width: 50px;
+    height: auto; }
+
+/*# sourceMappingURL=portfolio.css.map */
