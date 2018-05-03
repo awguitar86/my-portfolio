@@ -33,7 +33,7 @@ body {
       .home-cover header div h3 {
         margin: 0;
         color: #D7D9CE;
-        font-family: Montserrat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: normal; }
 
 .home-body {
@@ -52,7 +52,7 @@ body {
   margin-bottom: 90px; }
   .home-body-content p {
     color: #D7D9CE;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     font-size: 44pt;
     margin: 0; }
@@ -62,7 +62,7 @@ body {
     margin: 0; }
   .home-body-content h1 {
     color: #D7D9CE;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0; }
 
@@ -77,7 +77,7 @@ body {
   margin-bottom: 50px; }
   .skills h2 {
     color: #040404;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     border-bottom: solid #040404 1px; }
 
@@ -102,7 +102,7 @@ body {
   .skill-item h4 {
     text-align: center;
     font-weight: normal;
-    font-family: Montserrat; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .item1 img {
   border-radius: 12pc; }
@@ -121,7 +121,7 @@ body {
     margin-top: 50px; }
     .projects-top h2 a {
       color: #D7D9CE;
-      font-family: Montserrat;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: normal;
       border-bottom: solid #D7D9CE 1px; }
 
@@ -141,19 +141,19 @@ body {
   justify-content: space-around; }
   .projects-top-left h2 {
     color: #907AD6;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0; }
   .projects-top-left h5 {
     color: #D7D9CE;
     font-size: 12pt;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0;
     line-height: 16pt; }
   .projects-top-left p {
     color: #D7D9CE;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0;
     line-height: 16pt; }
@@ -169,7 +169,7 @@ body {
   .projects-top-links a {
     color: #907AD6;
     cursor: pointer;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-right: 50px;
     text-decoration: none;
     border-bottom: solid 1px #907AD6;
@@ -208,19 +208,19 @@ body {
   justify-content: space-around; }
   .projects-bottom-right h2 {
     color: #5AAC45;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0; }
   .projects-bottom-right h5 {
     color: #040404;
     font-size: 12pt;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0;
     line-height: 16pt; }
   .projects-bottom-right p {
     color: #040404;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     margin: 0;
     line-height: 16pt; }
@@ -236,7 +236,7 @@ body {
   .projects-bottom-links a {
     color: #5AAC45;
     cursor: pointer;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-right: 50px;
     text-decoration: none;
     border-bottom: solid 1px #5AAC45;
@@ -256,7 +256,7 @@ body {
   margin-left: -8px; }
   .about h2 {
     color: #D7D9CE;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     border-bottom: solid #D7D9CE 1px;
     margin: 0; }
@@ -275,7 +275,7 @@ body {
     border-radius: 12pc; }
   .about-info p {
     color: #D7D9CE;
-    font-family: Montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 16pt;
     margin: 0; }
@@ -555,14 +555,14 @@ body {
       display: initial;
       font-weight: normal;
       color: #907AD6;
-      font-family: Montserrat;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
       margin: 0; }
     .projects-top-left h4 {
       display: initial;
       font-weight: normal;
       color: #D7D9CE;
-      font-family: Montserrat;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
       margin: 0; }
 
@@ -589,14 +589,14 @@ body {
       display: initial;
       font-weight: normal;
       color: #5AAC45;
-      font-family: Montserrat;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
       margin: 0; }
     .projects-bottom-right h4 {
       display: initial;
       font-weight: normal;
       color: #040404;
-      font-family: Montserrat;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-align: center;
       margin: 0; }
 
