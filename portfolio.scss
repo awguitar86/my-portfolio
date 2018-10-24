@@ -93,12 +93,11 @@ body {
 //Skills section
 .skills {
     width: 100vw;
-    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    // border: solid;
+    margin-top: 50px;
     margin-left: -8px;
     margin-bottom: 50px;
     h2 {
@@ -106,6 +105,7 @@ body {
         font-family: $font;
         font-weight: normal;
         border-bottom: solid $dark 1px;
+        margin-bottom: 50px;
     }
 }
 
@@ -114,7 +114,7 @@ body {
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 140px);
+    grid-template-rows: repeat(8, 140px);
     border: solid 1px #04040480;
     border-radius: 5px;
     padding: 40px 20px 40px 20px;
@@ -373,6 +373,7 @@ body {
     color: $light;
     cursor: pointer;
     font-size: 14pt;
+    transition: ease-in-out 0.3s;
     &:hover {
         transition: ease-in-out 0.3s;
         width: 198px;
