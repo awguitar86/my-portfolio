@@ -233,10 +233,36 @@ body {
 
 
 .projects-top-right {
-    img {
-        width: auto;
-        height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lc-pics {
+    width: auto;
+    height: 470px;
+}
+.lc-pic-btn {
+    width: 20px;
+    height: 40px;
+    border: none;
+    background: #FFFFFF70;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: ease-in-out 0.3s;
+    &:hover {
+        background: #FFFFFF50;
+        transition: ease-in-out 0.3s;
     }
+    &:active {
+        background: #FFFFFF;
+    }
+}
+.lc-btn-left {
+    border-radius: 3px 0px 0px 3px;
+}
+.lc-btn-right {
+    border-radius: 0px 3px 3px 0px;
 }
 
 .projects-bottom {
@@ -258,15 +284,42 @@ body {
     // border: solid red;
 }
 .projects-bottom-left {
-    img {
-        width: auto;
-        height: 470px;
-        box-shadow: 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planappus-pics {
+    width: auto;
+    height: 470px;
+    box-shadow: 0px 0px 20px;
+}
+.planappus-pic-btn {
+    width: 20px;
+    height: 40px;
+    border: none;
+    background: #00000070;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: ease-in-out 0.3s;
+    &:hover {
+        background: #00000050;
+        transition: ease-in-out 0.3s;
+    }
+    &:active {
+        background: #000000;
     }
 }
+.planappus-btn-left {
+    border-radius: 3px 0px 0px 3px;
+}
+.planappus-btn-right {
+    border-radius: 0px 3px 3px 0px;
+}
+
 .projects-bottom-right {
     height: 300px;
-    width: 550px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -320,6 +373,25 @@ body {
     display: none;
 }
 
+.designs {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -8px;
+    // border: solid red;
+    h2 {
+        margin-top: 50px;
+        a {
+            color: $dark;
+            font-family: $font;
+            font-weight: normal;
+            border-bottom: solid $dark 1px;
+        }
+    }
+}
 
 
 .about {
@@ -507,12 +579,15 @@ body {
         }
     }
     .projects-bottom-image {
-        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: -3px;
-        img {
-            width: auto;
-            height: 470px;
-        }
+    }
+    .plan-bottom-pics {
+        width: auto;
+        height: 470px;
+        box-shadow: 0px 0px 20px;
     }
 }
 
@@ -537,9 +612,6 @@ body {
             font-size: 20pt;
         }
     }
-    .skills {
-        height: 800px;
-    }
     .skills-logos {
         width: 90vw;
         grid-template-rows: repeat(4, 120px);
@@ -561,7 +633,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     .home-cover {
         header {
             div{
@@ -579,7 +651,7 @@ body {
         }
     }
     .projects-top {
-        height: 800px;
+        height: 830px;
     }
     .projects-top-left {
         width: 90vw;
@@ -632,9 +704,6 @@ body {
     }
 }
 @media only screen and (max-width: 620px) {
-    .skills {
-        height: 1600px;
-    }
     .skills-logos {
         width: 80vw;
         grid-template-columns: repeat(2, 1fr);
@@ -834,9 +903,6 @@ body {
         h1 {
             font-size: 14pt;
         }
-    }
-    .skills {
-        height: 1500px;
     }
     .skills-logos {
         width: 80vw;

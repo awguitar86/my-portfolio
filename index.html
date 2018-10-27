@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Austin Wright Portfolio</title>
     <link rel="stylesheet" type="text/css" href='./portfolio.css'/>
+    <link rel="stylesheet" type="text/css" href='./RouteStyles/routeStyles.css'/>
     <link rel="shortcut icon" href="./portfoliofavicon.ico">
 </head>
 <body>
@@ -162,8 +163,8 @@
             <div class='projects-top-left'>
                 <h2>LAHNA'S CHOCOLATES - PERSONAL PROJECT</h2>
                 <h3>LAHNA'S CHOCOLATES<br/>PERSONAL PROJECT</h3>
-                <h5>React | Redux | Node | Nodemailer | Sass | Auth0 | PostgreSQL</h5>
-                <h4>React | Redux | Node | Nodemailer<br/>Sass | Auth0 | PostgreSQL</h4>
+                <h5>React.js | Redux | Node.js | Nodemailer | Sass | Auth0 | PostgreSQL</h5>
+                <h4>React.js | Redux | Node.js | Nodemailer<br/>Sass | Auth0 | PostgreSQL</h4>
                 <p>
                     An e-commerce site to make buying hand dipped chocolates easier and more visually pleasing.
                     Uses Sass over CSS for better styling, React routing for better naviagtion from page to page,
@@ -178,20 +179,33 @@
                 </div>
             </div>
             <div class='projects-top-right'>
-                <img src='./images/LC/lahnas-chocolates-home.jpg' alt='lahnas chocolates home page'/>
+                <button class="lc-pic-btn lc-btn-left" onclick="plusDivs(-1)">&#10094;</button>
+
+                <img src='./images/LC/lahnas-chocolates-home.jpg' alt='lahnas chocolates home page' class="lc-pics"/>
+                <img src='./images/LC/LCProductPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
+                <img src='./images/LC/LCSingleProductPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
+                <img src='./images/LC/LCAboutPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
+
+                <button class="lc-pic-btn lc-btn-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
         </div>
     </div>
     <div class='projects-bottom'>
             <div class='project-bottom-body'>
                 <div class='projects-bottom-left'>
-                        <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home'/>
+                    <button class="planappus-pic-btn planappus-btn-left" onclick="planPlusDivs(-1)">&#10094;</button>
+                    <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home' class="planappus-pics"/>
+                    <img src='./images/Planappus/PlanappusSettings.png' alt='Planappus Home' class="planappus-pics"/>
+                    <img src='./images/Planappus/PlanappusController.png' alt='Planappus Home' class="planappus-pics"/>
+                    <img src='./images/Planappus/PlanappusSchema.png' alt='Planappus Home' class="planappus-pics"/>
+                    <img src='./images/Planappus/PlanappusDrawer.png' alt='Planappus Home' class="planappus-pics"/>
+                    <button class="planappus-pic-btn planappus-btn-right" onclick="planPlusDivs(1)">&#10095;</button>
                 </div>
                 <div class='projects-bottom-right'>
                     <h2>PLANAPPUS - GROUP PROJECT</h2>
                     <h3>PLANAPPUS<br/>GROUP PROJECT</h3>
-                    <h5>React | Redux | Node | Nodemailer | Passport | Sass | PostgreSQL</h5>
-                    <h4>React | Redux | Node | Nodemailer<br/>Passport | Sass | PostgreSQL</h4>
+                    <h5>React.js | Redux | Node.js | Nodemailer | Passport | Sass | PostgreSQL</h5>
+                    <h4>React.js | Redux | Node.js | Nodemailer<br/>Passport | Sass | PostgreSQL</h4>
                     <p>
                         A website designed to help developers and designers plan their projects in a
                         more organized way all in one place.  Uses React routing to make naviagation
@@ -206,9 +220,54 @@
                     </div>
                 </div>
                 <div class='projects-bottom-image'>
-                    <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home'/>
+                    <button class="planappus-pic-btn planappus-btn-left" onclick="planBottomPlusDivs(-1)">&#10094;</button>
+                    <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home' class="plan-bottom-pics"/>
+                    <img src='./images/Planappus/PlanappusSettings.png' alt='Planappus Home' class="plan-bottom-pics"/>
+                    <img src='./images/Planappus/PlanappusController.png' alt='Planappus Home' class="plan-bottom-pics"/>
+                    <img src='./images/Planappus/PlanappusSchema.png' alt='Planappus Home' class="plan-bottom-pics"/>
+                    <img src='./images/Planappus/PlanappusDrawer.png' alt='Planappus Home' class="plan-bottom-pics"/>
+                    <button class="planappus-pic-btn planappus-btn-right" onclick="planBottomPlusDivs(1)">&#10095;</button>
                 </div>
             </div>
+    </div>
+    <div class='route-section'>
+        <div class='route-body'>
+            <div class='route-top-left'>
+                <h2>ROUTE APP - FRONT END DEVELOPER</h2>
+                <h3>ROUTE APP<br/>FRONT END DEVELOPER</h3>
+                <h5>React.js | Redux | Sass | Chart.js | Axios HTTP | AWS Cognito | </h5>
+                <h4>React.js | Redux | Sass<br/>Chart.js | Axios HTTP | AWS Cognito | </h4>
+                <p>
+                        Route's platform is a dashboard where merchants go to see revenue and transaction data from customers
+                        who bought Route to insure their order. I wireframed and designed the new platform using Adobe Xd and
+                        Adobe Illustrator. I built the whole front end of their platform in React.js. I used SASS for the styling
+                        on each component, Redux for storing data throughout the whole platform, and Axios HTTP request for
+                        connecting to the endpoints to GET, POST, PUT, and DELETE data in the database. Route uses AWS services
+                        for hosting. I helped with uploading content to S3, and creating the flow to host the content from S3
+                        through CloudFront, Route 53, CodeBuild, and CodePipeline. I connected the platform to Cognito for
+                        authenticating users to signup and login and out of the platform. We use Asana for keeping track of
+                        sprints and tasks that need done.
+                </p>
+                <div class='route-top-links'>
+                    <a href='https://react.routeapp.io/login' target='_blank'>react.routeapp.io</a>
+                </div>
+            </div>
+            <div class='route-top-right'>
+                <button class="route-pic-btn route-btn-left" onclick="routePlusDivs(-1)">&#10094;</button>
+
+                <img src='./images/Route/RouteDashboard.png' alt='Route Dashboard' class="route-pics"/>
+                <img src='./images/Route/RouteAccount.png' alt='Route Account' class="route-pics"/>
+                <img src='./images/Route/RouteBilling.png' alt='Route Billing' class="route-pics"/>
+                <img src='./images/Route/RouteAddBilling.png' alt='Route Add Billing' class="route-pics"/>
+                <img src='./images/Route/RouteLogin.png' alt='Route Login' class="route-pics"/>
+
+                <button class="route-pic-btn route-btn-right" onclick="routePlusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div class="designs">
+        <h2><a name='designs'>DESIGNS</a></h2>
+
     </div>
     <div class='about'>
         <h2><a name='about'>ABOUT</a></h2>
@@ -231,6 +290,82 @@
             <a href='https://www.instagram.com/awguitar86/' target='_blank'><img src='./images/Logos/instagram-logo.png' alt='instagram logo'/></a>
         </div>
     </div>
+    <script>
+        //Lahna's Chocolates JS
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("lc-pics");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+
+        // Planappus JS
+        var planSlideIndex = 1;
+        planShowDivs(planSlideIndex);
+
+        function planPlusDivs(n) {
+            planShowDivs(planSlideIndex += n);
+        }
+
+        function planShowDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("planappus-pics");
+            if (n > x.length) {planSlideIndex = 1}
+            if (n < 1) {planSlideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[planSlideIndex-1].style.display = "block";
+        }
+
+        // Planappus bottom JS
+        var planBottomSlideIndex = 1;
+        planBottomShowDivs(planBottomSlideIndex);
+
+        function planBottomPlusDivs(n) {
+            planBottomShowDivs(planBottomSlideIndex += n);
+        }
+
+        function planBottomShowDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("plan-bottom-pics");
+            if (n > x.length) {planBottomSlideIndex = 1}
+            if (n < 1) {planBottomSlideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[planBottomSlideIndex-1].style.display = "block";
+        }
+
+        // Route JS
+        var routeSlideIndex = 1;
+        routeShowDivs(routeSlideIndex);
+
+        function routePlusDivs(n) {
+            routeShowDivs(routeSlideIndex += n);
+        }
+
+        function routeShowDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("route-pics");
+            if (n > x.length) {routeSlideIndex = 1}
+            if (n < 1) {routeSlideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[routeSlideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>

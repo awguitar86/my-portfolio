@@ -210,9 +210,41 @@ body {
   font-size: 13pt;
 }
 
-.projects-top-right img {
+.projects-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lc-pics {
   width: auto;
   height: 470px;
+}
+
+.lc-pic-btn {
+  width: 20px;
+  height: 40px;
+  border: none;
+  background: #FFFFFF70;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+.lc-pic-btn:hover {
+  background: #FFFFFF50;
+  transition: ease-in-out 0.3s;
+}
+.lc-pic-btn:active {
+  background: #FFFFFF;
+}
+
+.lc-btn-left {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.lc-btn-right {
+  border-radius: 0px 3px 3px 0px;
 }
 
 .projects-bottom {
@@ -233,15 +265,47 @@ body {
   align-items: flex-start;
 }
 
-.projects-bottom-left img {
+.projects-bottom-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planappus-pics {
   width: auto;
   height: 470px;
   box-shadow: 0px 0px 20px;
 }
 
+.planappus-pic-btn {
+  width: 20px;
+  height: 40px;
+  border: none;
+  background: #00000070;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+.planappus-pic-btn:hover {
+  background: #00000050;
+  transition: ease-in-out 0.3s;
+}
+.planappus-pic-btn:active {
+  background: #000000;
+}
+
+.planappus-btn-left {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.planappus-btn-right {
+  border-radius: 0px 3px 3px 0px;
+}
+
 .projects-bottom-right {
   height: 300px;
-  width: 550px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -291,6 +355,25 @@ body {
 
 .projects-bottom-image {
   display: none;
+}
+
+.designs {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -8px;
+}
+.designs h2 {
+  margin-top: 50px;
+}
+.designs h2 a {
+  color: #040404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  border-bottom: solid #040404 1px;
 }
 
 .about {
@@ -477,12 +560,16 @@ body {
   }
 
   .projects-bottom-image {
-    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: -3px;
   }
-  .projects-bottom-image img {
+
+  .plan-bottom-pics {
     width: auto;
     height: 470px;
+    box-shadow: 0px 0px 20px;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -501,10 +588,6 @@ body {
   }
   .home-body-content h1 {
     font-size: 20pt;
-  }
-
-  .skills {
-    height: 800px;
   }
 
   .skills-logos {
@@ -526,7 +609,7 @@ body {
     font-size: 14pt;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
   .home-cover header div {
     width: 100vw;
   }
@@ -541,7 +624,7 @@ body {
   }
 
   .projects-top {
-    height: 800px;
+    height: 830px;
   }
 
   .projects-top-left {
@@ -599,10 +682,6 @@ body {
   }
 }
 @media only screen and (max-width: 620px) {
-  .skills {
-    height: 1600px;
-  }
-
   .skills-logos {
     width: 80vw;
     grid-template-columns: repeat(2, 1fr);
@@ -798,10 +877,6 @@ body {
   }
   .home-body-content h1 {
     font-size: 14pt;
-  }
-
-  .skills {
-    height: 1500px;
   }
 
   .skills-logos {
