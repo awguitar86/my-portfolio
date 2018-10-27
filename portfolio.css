@@ -1,5 +1,9 @@
 body {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home {
@@ -563,7 +567,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -3px;
   }
 
   .plan-bottom-pics {
@@ -574,7 +577,7 @@ body {
 }
 @media only screen and (max-width: 1050px) {
   .home-cover header div {
-    width: 50vw;
+    width: 60vw;
   }
 
   .home-body-content {
@@ -910,6 +913,24 @@ body {
   }
   .social-media img {
     width: 40px;
+  }
+
+  .projects-top-right img {
+    width: 85vw;
+    height: auto;
+  }
+
+  .projects-bottom-image img {
+    width: 85vw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .home-cover {
+    height: 700px;
+  }
+  .home-cover header div h3 {
+    font-size: 10pt;
   }
 }
 @media only screen and (max-width: 340px) {
