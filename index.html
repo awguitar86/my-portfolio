@@ -7,6 +7,7 @@
     <title>Austin Wright Portfolio</title>
     <link rel="stylesheet" type="text/css" href='./portfolio.css'/>
     <link rel="stylesheet" type="text/css" href='./RouteStyles/routeStyles.css'/>
+    <link rel="stylesheet" type="text/css" href='./IconStyles/icon.css'/>
     <link rel="shortcut icon" href="./portfoliofavicon.ico">
 </head>
 <body>
@@ -16,7 +17,6 @@
                 <div>
                     <a href='#skills'><h3>SKILLS</h3></a>
                     <a href='#projects'><h3>PROJECTS</h3></a>
-                    <a href='#designs'><h3>DESIGNS</h3></a>
                     <a href='#about'><h3>ABOUT</h3></a>
                 </div>
             </header>
@@ -266,8 +266,50 @@
             </div>
         </div>
     </div>
-    <div class="designs">
-        <h2><a name='designs'>DESIGNS</a></h2>
+    <div class="icon-culinary">
+            <div class='icon-bottom-body'>
+                <div class='icon-bottom-left'>
+                    <button class="icon-pic-btn icon-btn-left" onclick="iconPlusDivs(-1)">&#10094;</button>
+                    <img src='./images/Icon/IconHome.png' alt='Icon Home' class="icon-pics"/>
+                    <img src='./images/Icon/IconAbout.png' alt='Icon About' class="icon-pics"/>
+                    <img src='./images/Icon/IconGallery.png' alt='Icon Gallery' class="icon-pics"/>
+                    <img src='./images/Icon/IconContact.png' alt='Icon Contact' class="icon-pics"/>
+                    <img src='./images/Icon/ReefHome.png' alt='Reef Home' class="icon-pics"/>
+                    <img src='./images/Icon/ReefAbout.png' alt='Reef About' class="icon-pics"/>
+                    <img src='./images/Icon/ReefMenu.png' alt='Reef Contact' class="icon-pics"/>
+                    <img src='./images/Icon/ReefContact.png' alt='Reef Menu' class="icon-pics"/>
+                    <button class="icon-pic-btn icon-btn-right" onclick="iconPlusDivs(1)">&#10095;</button>
+                </div>
+                <div class='icon-bottom-right'>
+                    <h2>ICON CULINARY & REEF CAFE</h2>
+                    <h3>ICON CULINARY<br/>& REEF CAFE</h3>
+                    <h5>React.js | Sass</h5>
+                    <h4>React.js | Sass</h4>
+                    <p>
+                        Icon Culinary and Reef Cafe are the exclusive event catering and food services for the Loveland Living
+                        Planet Aquarium in Draper, UT. I design and develop their websites for people to see what they do
+                        at the Aquarium, and the menu they provide for the cafe and catering. These are simple information websites
+                        developed in React.js and Sass.
+
+                    </p>
+                    <div class='icon-bottom-links'>
+                        <a href='http://www.iconculinary.com/' target='_blank'>www.iconculinary.com</a>
+                        <a href='https://www.thereefcafe.net' target='_blank'>www.thereefcafe.net</a>
+                    </div>
+                </div>
+                <div class='icon-bottom-image'>
+                    <button class="icon-pic-btn icon-btn-left" onclick="iconBottomPlusDivs(-1)">&#10094;</button>
+                    <img src='./images/Icon/IconHome.png' alt='Icon Home' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/IconAbout.png' alt='Icon About' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/IconGallery.png' alt='Icon Gallery' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/IconContact.png' alt='Icon Contact' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/ReefHome.png' alt='Reef Home' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/ReefAbout.png' alt='Reef About' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/ReefMenu.png' alt='Reef Contact' class="icon-bottom-pics"/>
+                    <img src='./images/Icon/ReefContact.png' alt='Reef Menu' class="icon-bottom-pics"/>
+                    <button class="icon-pic-btn icon-btn-right" onclick="iconBottomPlusDivs(1)">&#10095;</button>
+                </div>
+            </div>
 
     </div>
     <div class='about'>
@@ -366,6 +408,43 @@
                 x[i].style.display = "none";
             }
             x[routeSlideIndex-1].style.display = "block";
+        }
+
+        // Icon JS
+        var iconSlideIndex = 1;
+        iconShowDivs(iconSlideIndex);
+
+        function iconPlusDivs(n) {
+            iconShowDivs(iconSlideIndex += n);
+        }
+
+        function iconShowDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("icon-pics");
+            if (n > x.length) {iconSlideIndex = 1}
+            if (n < 1) {iconSlideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[iconSlideIndex-1].style.display = "block";
+        }
+        // Icon Bottom JS
+        var iconBottomSlideIndex = 1;
+        iconBottomShowDivs(iconBottomSlideIndex);
+
+        function iconBottomPlusDivs(n) {
+            iconBottomShowDivs(iconBottomSlideIndex += n);
+        }
+
+        function iconBottomShowDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("icon-bottom-pics");
+            if (n > x.length) {iconBottomSlideIndex = 1}
+            if (n < 1) {iconBottomSlideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[iconBottomSlideIndex-1].style.display = "block";
         }
     </script>
 </body>

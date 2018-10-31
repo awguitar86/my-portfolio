@@ -1,0 +1,290 @@
+.icon-culinary {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: -8px;
+}
+
+.icon-bottom-body {
+  width: 1400px;
+  height: 470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon-bottom-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-pics {
+  width: auto;
+  height: 470px;
+  box-shadow: 0px 0px 20px;
+}
+
+.icon-pic-btn {
+  width: 20px;
+  height: 40px;
+  border: none;
+  background: #00000070;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+.icon-pic-btn:hover {
+  background: #00000050;
+  transition: ease-in-out 0.3s;
+}
+.icon-pic-btn:active {
+  background: #000000;
+}
+
+.icon-btn-left {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.icon-btn-right {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.icon-bottom-right {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.icon-bottom-right h2 {
+  color: #BE1E2D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.icon-bottom-right h5 {
+  color: #040404;
+  font-size: 12pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  line-height: 16pt;
+}
+.icon-bottom-right p {
+  color: #040404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  line-height: 16pt;
+}
+.icon-bottom-right h3 {
+  display: none;
+}
+.icon-bottom-right h4 {
+  display: none;
+}
+
+.icon-bottom-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-bottom-links a {
+  color: #BE1E2D;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border-bottom: solid 1px #BE1E2D;
+  font-size: 13pt;
+}
+
+.icon-bottom-image {
+  display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .icon-bottom-body {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 1420px) {
+  .icon-pics {
+    width: auto;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .icon-bottom-right {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .icon-culinary {
+    height: 820px;
+  }
+
+  .icon-bottom-body {
+    height: 740px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon-bottom-left {
+    display: none;
+  }
+
+  .icon-bottom-right {
+    width: 610px;
+    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-bottom-right h2 {
+    margin-top: 0px;
+  }
+  .icon-bottom-right p {
+    text-align: center;
+  }
+
+  .icon-bottom-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon-bottom-pics {
+    width: auto;
+    height: 470px;
+    box-shadow: 0px 0px 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .icon-culinary {
+    height: 750px;
+  }
+
+  .icon-bottom-right {
+    width: 81vw;
+    height: 250px;
+    margin-top: 30px;
+  }
+  .icon-bottom-right h2 {
+    font-size: 16pt;
+  }
+
+  .icon-bottom-pics {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .icon-culinary {
+    height: 700px;
+  }
+
+  .icon-bottom-body {
+    height: 680px;
+  }
+
+  .icon-bottom-right {
+    width: 90vw;
+    height: 220px;
+  }
+  .icon-bottom-right h2 {
+    text-align: center;
+  }
+
+  .icon-bottom-links {
+    align-items: center;
+    justify-content: space-between;
+    width: 81vw;
+  }
+  .icon-bottom-links a {
+    margin: 0;
+  }
+
+  .icon-bottom-pics {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .icon-culinary {
+    height: 680px;
+  }
+
+  .icon-bottom-body {
+    height: 650px;
+  }
+
+  .icon-bottom-pics {
+    width: 85vw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .icon-culinary {
+    height: 700px;
+  }
+
+  .icon-bottom-body {
+    height: 660px;
+  }
+
+  .icon-bottom-right {
+    height: 350px;
+  }
+  .icon-bottom-right h2 {
+    display: none;
+  }
+  .icon-bottom-right h5 {
+    display: none;
+  }
+  .icon-bottom-right h3 {
+    display: initial;
+    font-weight: normal;
+    color: #BE1E2D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  .icon-bottom-right h4 {
+    display: initial;
+    font-weight: normal;
+    color: #040404;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+
+  .icon-bottom-links {
+    flex-direction: column;
+    height: 65px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .icon-culinary {
+    height: 660px;
+  }
+
+  .icon-bottom-body {
+    height: 640px;
+  }
+
+  .icon-bottom-right {
+    height: 370px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .icon-bottom-right {
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=icon.css.map */

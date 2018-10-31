@@ -115,20 +115,17 @@
     .route-body {
         width: 95vw;
     }
-}
-
-@media only screen and (max-width: 1375px) {
     .route-pics{
-            width: auto;
-            height: 400px;
-        }
+        width: auto;
+        height: 400px;
+    }
+    .route-top-left {
+        width: 550px;
+    }
 }
 
 @media only screen and (max-width: 1260px) {
     .route-top-left {
-        width: 500px;
-    }
-    .route-top-links {
         width: 500px;
     }
 }
@@ -282,8 +279,11 @@
 }
 
 @media only screen and (max-width: 320px) {
-    .route-body {
+    .route-section {
         height: 1100px;
+    }
+    .route-body {
+        height: 1000px;
     }
     .route-top-right {
         height: 250px;
