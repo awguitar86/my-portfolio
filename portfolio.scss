@@ -451,15 +451,26 @@ body {
     font-weight: normal;
     margin: 0;
     margin-bottom: 40px;
-    a {
+    p {
         border-bottom: solid $light 1px;
         font-size: 1.5em;
+        margin: 0;
     }
+}
+.job-break {
+    width: 300px;
+    border-bottom: solid 1px $light;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .uvu-job {
     margin-bottom: 40px;
+    border: solid 1px $light;
+    border-radius: 5px;
+    padding: 20px;
     h3 {
         margin: 0;
+        margin-bottom: 4px;
         font-weight: 600;
     }
     p {
@@ -468,8 +479,12 @@ body {
 }
 .icon-job {
     margin-bottom: 40px;
+    border: solid 1px $light;
+    border-radius: 5px;
+    padding: 20px;
     h3 {
         margin: 0;
+        margin-bottom: 4px;
         font-weight: 600;
     }
     p {
@@ -478,12 +493,47 @@ body {
 }
 .route-job {
     margin-bottom: 40px;
+    border: solid 1px $light;
+    border-radius: 5px;
+    padding: 20px;
     h3 {
         margin: 0;
+        margin-bottom: 4px;
         font-weight: 600;
     }
     p {
         margin: 0;
+    }
+}
+.education {
+    margin-bottom: 40px;
+    border: solid 1px $light;
+    border-radius: 5px;
+    padding: 20px;
+    h3 {
+        margin: 0;
+        margin-bottom: 4px;
+        a {
+            text-decoration: none;
+            color: $light;
+            img {
+                width: 15px;
+                height: auto;
+                margin-left: 5px;
+            }
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+.certificate {
+    color: $light;
+    img {
+        width: 15px;
+        height: auto;
+        margin-left: 5px;
+        margin-bottom: -2px;
     }
 }
 
@@ -507,6 +557,11 @@ body {
         height: 38px;
         border: solid 2px $blue;
         color: $blue;
+    }
+    img {
+        width: 23px;
+        height: auto;
+        margin-left: 5px;
     }
 }
 

@@ -432,16 +432,28 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
-.experience-head a {
+.experience-head p {
   border-bottom: solid #D7D9CE 1px;
   font-size: 1.5em;
+  margin: 0;
+}
+
+.job-break {
+  width: 300px;
+  border-bottom: solid 1px #D7D9CE;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .uvu-job {
   margin-bottom: 40px;
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  padding: 20px;
 }
 .uvu-job h3 {
   margin: 0;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 .uvu-job p {
@@ -450,9 +462,13 @@ body {
 
 .icon-job {
   margin-bottom: 40px;
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  padding: 20px;
 }
 .icon-job h3 {
   margin: 0;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 .icon-job p {
@@ -461,13 +477,50 @@ body {
 
 .route-job {
   margin-bottom: 40px;
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  padding: 20px;
 }
 .route-job h3 {
   margin: 0;
+  margin-bottom: 4px;
   font-weight: 600;
 }
 .route-job p {
   margin: 0;
+}
+
+.education {
+  margin-bottom: 40px;
+  border: solid 1px #D7D9CE;
+  border-radius: 5px;
+  padding: 20px;
+}
+.education h3 {
+  margin: 0;
+  margin-bottom: 4px;
+}
+.education h3 a {
+  text-decoration: none;
+  color: #D7D9CE;
+}
+.education h3 a img {
+  width: 15px;
+  height: auto;
+  margin-left: 5px;
+}
+.education p {
+  margin: 0;
+}
+
+.certificate {
+  color: #D7D9CE;
+}
+.certificate img {
+  width: 15px;
+  height: auto;
+  margin-left: 5px;
+  margin-bottom: -2px;
 }
 
 .contact {
@@ -491,6 +544,11 @@ body {
   height: 38px;
   border: solid 2px #3E92CC;
   color: #3E92CC;
+}
+.contact img {
+  width: 23px;
+  height: auto;
+  margin-left: 5px;
 }
 
 .social-media {
