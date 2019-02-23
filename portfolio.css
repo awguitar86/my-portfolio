@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   display: flex;
@@ -5,6 +9,34 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 4px;
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  background: #040404;
+  top: 0;
+  left: 0;
+}
+header div {
+  width: 40vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header div a {
+  text-decoration: none;
+}
+header div h3 {
+  margin: 0;
+  color: #D7D9CE;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
 }
 
 .home {
@@ -23,29 +55,6 @@ body {
   width: 100vw;
   height: 900px;
   background: #040404B3;
-}
-.home-cover header {
-  width: 100vw;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.home-cover header div {
-  width: 40vw;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.home-cover header div a {
-  text-decoration: none;
-}
-.home-cover header div h3 {
-  margin: 0;
-  color: #D7D9CE;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
 }
 
 .home-body {
@@ -89,7 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px;
+  padding-top: 60px;
   margin-left: -8px;
   margin-bottom: 50px;
 }
@@ -142,7 +151,7 @@ body {
   background: #040404;
   margin-left: -8px;
   border-bottom: solid 1px #040404;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 #projects-top h2 a {
   color: #D7D9CE;
@@ -368,7 +377,7 @@ body {
   justify-content: space-around;
   background: #040404;
   margin-left: -8px;
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
 #about h2 {
@@ -419,6 +428,7 @@ body {
   color: #D7D9CE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 20px;
+  padding-top: 70px;
 }
 
 .experience-head {
@@ -456,6 +466,12 @@ body {
   margin-bottom: 4px;
   font-weight: 600;
 }
+.uvu-job h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.17em;
+}
 .uvu-job p {
   margin: 0;
 }
@@ -471,6 +487,12 @@ body {
   margin-bottom: 4px;
   font-weight: 600;
 }
+.icon-job h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.17em;
+}
 .icon-job p {
   margin: 0;
 }
@@ -485,6 +507,12 @@ body {
   margin: 0;
   margin-bottom: 4px;
   font-weight: 600;
+}
+.route-job h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.17em;
 }
 .route-job p {
   margin: 0;
@@ -505,6 +533,21 @@ body {
   color: #D7D9CE;
 }
 .education h3 a img {
+  width: 15px;
+  height: auto;
+  margin-left: 5px;
+}
+.education h4 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 1.17em;
+}
+.education h4 a {
+  text-decoration: none;
+  color: #D7D9CE;
+}
+.education h4 a img {
   width: 15px;
   height: auto;
   margin-left: 5px;
@@ -689,7 +732,7 @@ body {
   }
 }
 @media only screen and (max-width: 1050px) {
-  .home-cover header div {
+  header div {
     width: 60vw;
   }
 
@@ -731,9 +774,17 @@ body {
   .goals p {
     font-size: 12pt;
   }
+
+  #experience {
+    width: 90vw;
+  }
+
+  .experience-head {
+    width: 90vw;
+  }
 }
 @media only screen and (max-width: 770px) {
-  .home-cover header div {
+  header div {
     width: 100vw;
   }
 
@@ -969,15 +1020,16 @@ body {
   }
 }
 @media only screen and (max-width: 420px) {
+  header div h3 {
+    font-size: 12pt;
+  }
+
   .home {
     height: 700px;
   }
 
   .home-cover {
     height: 700px;
-  }
-  .home-cover header div h3 {
-    font-size: 12pt;
   }
 
   .home-body {
@@ -1033,6 +1085,10 @@ body {
     font-size: 10pt;
   }
 
+  .job-break {
+    width: 260px;
+  }
+
   .social-media {
     width: 80vw;
   }
@@ -1042,11 +1098,12 @@ body {
   }
 }
 @media only screen and (max-width: 375px) {
+  header div h3 {
+    font-size: 10pt;
+  }
+
   .home-cover {
     height: 700px;
-  }
-  .home-cover header div h3 {
-    font-size: 10pt;
   }
 }
 @media only screen and (max-width: 340px) {
