@@ -364,13 +364,14 @@ body {
 
 .about {
   width: 100vw;
-  height: 1700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   background: #040404;
   margin-left: -8px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .about h2 {
   color: #D7D9CE;
@@ -378,6 +379,7 @@ body {
   font-weight: normal;
   border-bottom: solid #D7D9CE 1px;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .about-info {
@@ -388,6 +390,7 @@ body {
   align-items: center;
   width: 1000px;
   height: 340px;
+  margin-bottom: 40px;
 }
 .about-info img {
   width: 230px;
@@ -407,6 +410,7 @@ body {
   color: #D7D9CE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14pt;
+  margin-bottom: 40px;
 }
 .goals p {
   line-height: 1.5;
@@ -425,6 +429,7 @@ body {
   cursor: pointer;
   font-size: 14pt;
   transition: ease-in-out 0.3s;
+  margin-bottom: 40px;
 }
 .contact:hover {
   transition: ease-in-out 0.3s;
@@ -672,11 +677,6 @@ body {
     height: 400px;
   }
 
-  .about {
-    width: 100vw;
-    height: 1800px;
-  }
-
   .about-info {
     height: 450px;
     flex-direction: column;
@@ -757,10 +757,6 @@ body {
 
   .projects-bottom-image img {
     height: 300px;
-  }
-
-  .about {
-    height: 2000px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -859,10 +855,6 @@ body {
     height: auto;
   }
 
-  .about {
-    height: 2200px;
-  }
-
   .about-info p {
     font-size: 12pt;
   }
@@ -918,17 +910,6 @@ body {
     height: 440px;
   }
 
-  .about-info p {
-    font-size: 10pt;
-  }
-
-  .social-media {
-    width: 250px;
-  }
-  .social-media img {
-    width: 40px;
-  }
-
   .projects-top-right img {
     width: 85vw;
     height: auto;
@@ -939,8 +920,16 @@ body {
     height: auto;
   }
 
-  .about {
-    height: 2500px;
+  .about-info p {
+    font-size: 10pt;
+  }
+
+  .social-media {
+    width: 80vw;
+  }
+
+  .contact {
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -949,10 +938,6 @@ body {
   }
   .home-cover header div h3 {
     font-size: 10pt;
-  }
-
-  .about {
-    height: 2700px;
   }
 }
 @media only screen and (max-width: 340px) {
@@ -977,10 +962,6 @@ body {
     height: 500px;
   }
 
-  .about {
-    height: 2800px;
-  }
-
   .about-info p {
     font-size: 9pt;
   }
@@ -988,10 +969,6 @@ body {
 @media only screen and (max-width: 320px) {
   .projects-top-left {
     height: 550px;
-  }
-
-  .about {
-    height: 2900px;
   }
 }
 

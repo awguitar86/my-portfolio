@@ -382,19 +382,22 @@ body {
 
 .about {
     width: 100vw;
-    height: 1700px;
+    // height: 1700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background: $dark;
     margin-left: -8px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     h2 {
         color: $light;
         font-family: $font;
         font-weight: normal;
         border-bottom: solid $light 1px;
         margin: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -406,6 +409,7 @@ body {
     align-items: center;
     width: 1000px;
     height: 340px;
+    margin-bottom: 40px;
     img {
         width: 230px;
         height: auto;
@@ -424,6 +428,7 @@ body {
     color: $light;
     font-family: $font;
     font-size: 14pt;
+    margin-bottom: 40px;
     p {
         line-height: 1.5;
     }
@@ -442,6 +447,7 @@ body {
     cursor: pointer;
     font-size: 14pt;
     transition: ease-in-out 0.3s;
+    margin-bottom: 40px;
     &:hover {
         transition: ease-in-out 0.3s;
         width: 198px;
@@ -687,10 +693,6 @@ body {
             height: 400px;
         }
     }
-    .about {
-        width: 100vw;
-        height: 1800px;
-    }
     .about-info {
         height: 450px;
         flex-direction: column;
@@ -773,9 +775,6 @@ body {
         img {
             height: 300px;
         }
-    }
-    .about {
-        height: 2000px;
     }
 
 }
@@ -872,9 +871,6 @@ body {
             height: auto;
         }
     }
-    .about {
-        height: 2200px;
-    }
     .about-info {
         p {
             font-size: 12pt;
@@ -932,17 +928,6 @@ body {
     .projects-bottom-right {
         height: 440px;
     }
-    .about-info {
-        p {
-            font-size: 10pt;
-        }
-    }
-    .social-media {
-        width: 250px;
-        img {
-            width: 40px;
-        }
-    }
     .projects-top-right {
         img {
             width: 85vw;
@@ -955,8 +940,16 @@ body {
             height: auto;
         }
     }
-    .about {
-        height: 2500px;
+    .about-info {
+        p {
+            font-size: 10pt;
+        }
+    }
+    .social-media {
+        width: 80vw;
+    }
+    .contact {
+        width: 90vw;
     }
 }
 
@@ -970,9 +963,6 @@ body {
                     }
                 }
             }
-    }
-    .about {
-        height: 2700px;
     }
 }
 
@@ -996,9 +986,6 @@ body {
     .projects-bottom-right {
         height: 500px;
     }
-    .about {
-        height: 2800px;
-    }
     .about-info {
         p {
             font-size: 9pt;
@@ -1009,8 +996,5 @@ body {
 @media only screen and (max-width: 320px) {
     .projects-top-left {
         height: 550px;
-    }
-    .about {
-        height: 2900px;
     }
 }
