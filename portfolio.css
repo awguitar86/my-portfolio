@@ -83,7 +83,7 @@ body {
   margin: 0;
 }
 
-.skills {
+#skills {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ body {
   margin-left: -8px;
   margin-bottom: 50px;
 }
-.skills h2 {
+#skills h2 {
   color: #040404;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
@@ -132,7 +132,7 @@ body {
   border-radius: 12pc;
 }
 
-.projects-top {
+#projects-top {
   width: 100vw;
   height: 600px;
   display: flex;
@@ -142,11 +142,9 @@ body {
   background: #040404;
   margin-left: -8px;
   border-bottom: solid 1px #040404;
+  padding-top: 40px;
 }
-.projects-top h2 {
-  margin-top: 50px;
-}
-.projects-top h2 a {
+#projects-top h2 a {
   color: #D7D9CE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
@@ -362,7 +360,7 @@ body {
   display: none;
 }
 
-.about {
+#about {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -373,7 +371,7 @@ body {
   padding-top: 50px;
   padding-bottom: 80px;
 }
-.about h2 {
+#about h2 {
   color: #D7D9CE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
@@ -414,6 +412,62 @@ body {
 }
 .goals p {
   line-height: 1.5;
+}
+
+#experience {
+  width: 1000px;
+  color: #D7D9CE;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+
+.experience-head {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D7D9CE;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.experience-head a {
+  border-bottom: solid #D7D9CE 1px;
+  font-size: 1.5em;
+}
+
+.uvu-job {
+  margin-bottom: 40px;
+}
+.uvu-job h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.uvu-job p {
+  margin: 0;
+}
+
+.icon-job {
+  margin-bottom: 40px;
+}
+.icon-job h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.icon-job p {
+  margin: 0;
+}
+
+.route-job {
+  margin-bottom: 40px;
+}
+.route-job h3 {
+  margin: 0;
+  font-weight: 600;
+}
+.route-job p {
+  margin: 0;
 }
 
 .contact {
@@ -495,11 +549,8 @@ body {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .projects-top {
+  #projects-top {
     height: 900px;
-  }
-  .projects-top h2 {
-    margin-top: 30px;
   }
 
   .project-top-body {
@@ -637,7 +688,7 @@ body {
     height: 50px;
   }
 
-  .projects-top {
+  #projects-top {
     height: 830px;
   }
 
@@ -773,7 +824,7 @@ body {
     font-size: 16pt;
   }
 
-  .projects-top {
+  #projects-top {
     height: 850px;
   }
 

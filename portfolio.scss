@@ -97,7 +97,7 @@ body {
 
 
 //Skills section
-.skills {
+#skills {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ body {
 
 
 //Projects section
-.projects-top {
+#projects-top {
     width: 100vw;
     height: 600px;
     display: flex;
@@ -161,8 +161,9 @@ body {
     background: $dark;
     margin-left: -8px;
     border-bottom: solid 1px $dark;
+    padding-top: 40px;
     h2 {
-        margin-top: 50px;
+        // margin-top: 50px;
         a {
             color: $light;
             font-family: $font;
@@ -380,7 +381,7 @@ body {
 }
 
 
-.about {
+#about {
     width: 100vw;
     // height: 1700px;
     display: flex;
@@ -431,6 +432,58 @@ body {
     margin-bottom: 40px;
     p {
         line-height: 1.5;
+    }
+}
+
+#experience {
+    width: 1000px;
+    color: $light;
+    font-family: $font;
+    margin-bottom: 20px;
+}
+.experience-head {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    font-family: $font;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 40px;
+    a {
+        border-bottom: solid $light 1px;
+        font-size: 1.5em;
+    }
+}
+.uvu-job {
+    margin-bottom: 40px;
+    h3 {
+        margin: 0;
+        font-weight: 600;
+    }
+    p {
+        margin: 0;
+    }
+}
+.icon-job {
+    margin-bottom: 40px;
+    h3 {
+        margin: 0;
+        font-weight: 600;
+    }
+    p {
+        margin: 0;
+    }
+}
+.route-job {
+    margin-bottom: 40px;
+    h3 {
+        margin: 0;
+        font-weight: 600;
+    }
+    p {
+        margin: 0;
     }
 }
 
@@ -512,11 +565,11 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-    .projects-top {
+    #projects-top {
         height: 900px;
-        h2 {
-            margin-top: 30px;
-        }
+        // h2 {
+        //     margin-top: 30px;
+        // }
     }
     .project-top-body {
         height: 820px;
@@ -657,7 +710,7 @@ body {
             height: 50px;
         }
     }
-    .projects-top {
+    #projects-top {
         height: 830px;
     }
     .projects-top-left {
@@ -793,7 +846,7 @@ body {
         }
     }
 
-    .projects-top {
+    #projects-top {
         height: 850px;
     }
     .project-top-body {
