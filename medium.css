@@ -20,7 +20,7 @@
         align-items: flex-start;
     }
     .main h2 {
-        margin-left: 60px;
+        margin-left: 40px;
         font-size: 24pt;
     }
     .phone {
@@ -28,7 +28,8 @@
     }
     .tablet {
         display: initial;
-        width: 40vw;
+        width: 80vw;
         height: auto;
+        margin-left: 40px;
     }
 }
