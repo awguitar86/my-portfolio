@@ -72,7 +72,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 footer p {
     color: white;
@@ -88,17 +88,6 @@ footer p {
 .tablet {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
