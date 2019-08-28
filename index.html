@@ -1,566 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Austin Wright Portfolio</title>
-    <link rel="stylesheet" type="text/css" href='./portfolio.css'/>
-    <link rel="stylesheet" type="text/css" href='./RouteStyles/routeStyles.css'/>
-    <link rel="stylesheet" type="text/css" href='./IconStyles/icon.css'/>
-    <link rel="shortcut icon" href="./portfoliofavicon.ico">
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+    <title>Fruit Stand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <div>
-            <a href='#projects-top'><h3>PROJECTS</h3></a>
-            <a href='#skills'><h3>SKILLS</h3></a>
-            <a href='#about'><h3>ABOUT</h3></a>
-            <!-- <a href='#experience'><h3>EXPERIENCE</h3></a> -->
-        </div>
+        <h1>Frank's Fresh Fruit</h1>
+        <p class="slogan">Frank's Favorite Fully Fresh Fruit</p>
     </header>
-    <div class='home' name='home'>
-        <div class='home-cover'>
-            <div class='home-body'>
-                <div class='home-body-content'>
-                    <p>AUSTIN WRIGHT</p>
-                    <div></div>
-                    <h1>WEB DEVELOPER & DESIGNER</h1>
-                </div>
+    <nav>
+        <a href='#'>Locations</a>
+        <hr/>
+        <a href='#'>Standards</a>
+        <hr />
+        <a href="#" class="active">Produce</a>
+        <hr />
+        <a href="#">Partners</a>
+    </nav>
+    <div class="main">
+       <h2>Produce</h2>
+       <div class="images">
+            <div class="fruit">
+                <img src="./images/apples.jpg" alt="">
+                <p>Apples</p>
             </div>
-        </div>
+            <div class="fruit">
+                <img src="./images/watermelon.jpg" alt="">
+                <p>Watermelon</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/strawberries.jpg" alt="">
+                <p>Strawberries</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/cantelope.jpg" alt="">
+                <p>Cantelope</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/oranges.jpg" alt="">
+                <p>Oranges</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/corn.jpg" alt="">
+                <p>Corn</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/tomatoes.jpg" alt="">
+                <p>Tomatoes</p>
+            </div>
+            <div class="fruit">
+                <img src="./images/raspberries.jpg" alt="">
+                <p>Raspberries</p>
+            </div>
+       </div>
     </div>
-    <div id='projects-top'>
-        <h2><a name='projects'>PROJECTS</a></h2>
-        <div class='project-top-body'>
-            <div class='projects-top-left'>
-                <h2>LAHNA'S CHOCOLATES - PERSONAL PROJECT</h2>
-                <h3>LAHNA'S CHOCOLATES<br/>PERSONAL PROJECT</h3>
-                <h5>React.js | Redux | Node.js | Nodemailer | Sass | Auth0 | PostgreSQL</h5>
-                <h4>React.js | Redux | Node.js | Nodemailer<br/>Sass | Auth0 | PostgreSQL</h4>
-                <p>
-                    An e-commerce site to make buying hand dipped chocolates easier and more visually pleasing.
-                    Uses Sass over CSS for better styling, React routing for better naviagtion from page to page,
-                    Redux to store information easier and better throughout the whole website, and PostgreSQL for
-                    storing user info, order info, and product info in a database. Uses Nodemailer for contacting
-                    the company, and for sending order info to the customer and company.
-                </p>
-                <div class='projects-top-links'>
-                    <a href='http://lahnaschocolates.devmtn-projects.com' target='_blank'>lahnaschocolates.devmtn-projects.com</a>
-                    <a href='https://github.com/awguitar86/Lahnas-Chocolate' target='_blank'>GitHub</a>
-                    <a href="https://www.youtube.com/watch?v=ramK53r4dTs&t=25s" target='_blank'>Video Walkthrough</a>
-                </div>
-            </div>
-            <div class='projects-top-right'>
-                <button class="lc-pic-btn lc-btn-left" onclick="plusDivs(-1)">&#10094;</button>
-
-                <img src='./images/LC/lahnas-chocolates-home.jpg' alt='lahnas chocolates home page' class="lc-pics"/>
-                <img src='./images/LC/LCProductPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
-                <img src='./images/LC/LCSingleProductPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
-                <img src='./images/LC/LCAboutPage.png' alt='lahnas chocolates home page' class="lc-pics"/>
-
-                <button class="lc-pic-btn lc-btn-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-        </div>
-    </div>
-    <div class='projects-bottom'>
-            <div class='project-bottom-body'>
-                <div class='projects-bottom-left'>
-                    <button class="planappus-pic-btn planappus-btn-left" onclick="planPlusDivs(-1)">&#10094;</button>
-                    <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home' class="planappus-pics"/>
-                    <img src='./images/Planappus/PlanappusSettings.png' alt='Planappus Home' class="planappus-pics"/>
-                    <img src='./images/Planappus/PlanappusController.png' alt='Planappus Home' class="planappus-pics"/>
-                    <img src='./images/Planappus/PlanappusSchema.png' alt='Planappus Home' class="planappus-pics"/>
-                    <img src='./images/Planappus/PlanappusDrawer.png' alt='Planappus Home' class="planappus-pics"/>
-                    <button class="planappus-pic-btn planappus-btn-right" onclick="planPlusDivs(1)">&#10095;</button>
-                </div>
-                <div class='projects-bottom-right'>
-                    <h2>PLANAPPUS - GROUP PROJECT</h2>
-                    <h3>PLANAPPUS<br/>GROUP PROJECT</h3>
-                    <h5>React.js | Redux | Node.js | Nodemailer | Passport | Sass | PostgreSQL</h5>
-                    <h4>React.js | Redux | Node.js | Nodemailer<br/>Passport | Sass | PostgreSQL</h4>
-                    <p>
-                        A website designed to help developers and designers plan their projects in a
-                        more organized way all in one place.  Uses React routing to make naviagation
-                        fast and easy, Sass in place of CSS for better styling, and Passport for simple
-                        and secure user authentication.  Utilizes PostgreSQL for a great object-relational
-                        database to store and easily access user info and project info.
-                    </p>
-                    <div class='projects-bottom-links'>
-                        <a href='http://www.planappus.com/' target='_blank'>www.planappus.com</a>
-                        <a href='https://github.com/Appr/Appr' target='_blank'>GitHub</a>
-                        <a href="https://www.youtube.com/watch?v=pi9_j277W0Q&t=1s" target='_blank'>Video Walkthrough</a>
-                    </div>
-                </div>
-                <div class='projects-bottom-image'>
-                    <button class="planappus-pic-btn planappus-btn-left" onclick="planBottomPlusDivs(-1)">&#10094;</button>
-                    <img src='./images/Planappus/PlanappusHome.png' alt='Planappus Home' class="plan-bottom-pics"/>
-                    <img src='./images/Planappus/PlanappusSettings.png' alt='Planappus Home' class="plan-bottom-pics"/>
-                    <img src='./images/Planappus/PlanappusController.png' alt='Planappus Home' class="plan-bottom-pics"/>
-                    <img src='./images/Planappus/PlanappusSchema.png' alt='Planappus Home' class="plan-bottom-pics"/>
-                    <img src='./images/Planappus/PlanappusDrawer.png' alt='Planappus Home' class="plan-bottom-pics"/>
-                    <button class="planappus-pic-btn planappus-btn-right" onclick="planBottomPlusDivs(1)">&#10095;</button>
-                </div>
-            </div>
-    </div>
-    <div class='route-section'>
-        <div class='route-body'>
-            <div class='route-top-left'>
-                <h2>ROUTE APP - FRONT END DEVELOPER</h2>
-                <h3>ROUTE APP<br/>FRONT END DEVELOPER</h3>
-                <h5>React.js | Redux | Sass | Chart.js | Axios HTTP | AWS Cognito | </h5>
-                <h4>React.js | Redux | Sass<br/>Chart.js | Axios HTTP | AWS Cognito | </h4>
-                <p>
-                        Route's platform is a dashboard where merchants go to see revenue and transaction data from customers
-                        who bought Route to insure their order. I wireframed and designed the new platform using Adobe Xd and
-                        Adobe Illustrator. I built the whole front end of their platform in React.js. I used SASS for the styling
-                        on each component, Redux for storing data throughout the whole platform, and Axios HTTP request for
-                        connecting to the endpoints to GET, POST, PUT, and DELETE data in the database. Route uses AWS services
-                        for hosting. I helped with uploading content to S3, and creating the flow to host the content from S3
-                        through CloudFront, Route 53, CodeBuild, and CodePipeline. I connected the platform to Cognito for
-                        authenticating users to signup and login and out of the platform. We use Asana for keeping track of
-                        sprints and tasks that need done.
-                </p>
-                <div class='route-top-links'>
-                    <a href='https://react.routeapp.io/login' target='_blank'>react.routeapp.io</a>
-                </div>
-            </div>
-            <div class='route-top-right'>
-                <button class="route-pic-btn route-btn-left" onclick="routePlusDivs(-1)">&#10094;</button>
-
-                <img src='./images/Route/RouteDashboard.png' alt='Route Dashboard' class="route-pics"/>
-                <img src='./images/Route/RouteAccount.png' alt='Route Account' class="route-pics"/>
-                <img src='./images/Route/RouteBilling.png' alt='Route Billing' class="route-pics"/>
-                <img src='./images/Route/RouteAddBilling.png' alt='Route Add Billing' class="route-pics"/>
-                <img src='./images/Route/RouteLogin.png' alt='Route Login' class="route-pics"/>
-
-                <button class="route-pic-btn route-btn-right" onclick="routePlusDivs(1)">&#10095;</button>
-            </div>
-        </div>
-    </div>
-    <div class="icon-culinary">
-            <div class='icon-bottom-body'>
-                <div class='icon-bottom-left'>
-                    <button class="icon-pic-btn icon-btn-left" onclick="iconPlusDivs(-1)">&#10094;</button>
-                    <img src='./images/Icon/IconHome.png' alt='Icon Home' class="icon-pics"/>
-                    <img src='./images/Icon/IconAbout.png' alt='Icon About' class="icon-pics"/>
-                    <img src='./images/Icon/IconGallery.png' alt='Icon Gallery' class="icon-pics"/>
-                    <img src='./images/Icon/IconContact.png' alt='Icon Contact' class="icon-pics"/>
-                    <img src='./images/Icon/ReefHome.png' alt='Reef Home' class="icon-pics"/>
-                    <img src='./images/Icon/ReefAbout.png' alt='Reef About' class="icon-pics"/>
-                    <img src='./images/Icon/ReefMenu.png' alt='Reef Contact' class="icon-pics"/>
-                    <img src='./images/Icon/ReefContact.png' alt='Reef Menu' class="icon-pics"/>
-                    <button class="icon-pic-btn icon-btn-right" onclick="iconPlusDivs(1)">&#10095;</button>
-                </div>
-                <div class='icon-bottom-right'>
-                    <h2>ICON CULINARY & REEF CAFE</h2>
-                    <h3>ICON CULINARY<br/>& REEF CAFE</h3>
-                    <h5>React.js | Sass</h5>
-                    <h4>React.js | Sass</h4>
-                    <p>
-                        Icon Culinary and Reef Cafe are the exclusive event catering and food services for the Loveland Living
-                        Planet Aquarium in Draper, UT. I design and develop their websites for people to see what they do
-                        at the Aquarium, and the menu they provide for the cafe and catering. These are simple information websites
-                        developed in React.js and Sass.
-
-                    </p>
-                    <div class='icon-bottom-links'>
-                        <a href='http://www.iconculinary.com/' target='_blank'>www.iconculinary.com</a>
-                        <a href='https://www.thereefcafe.net' target='_blank'>www.thereefcafe.net</a>
-                    </div>
-                </div>
-                <div class='icon-bottom-image'>
-                    <button class="icon-pic-btn icon-btn-left" onclick="iconBottomPlusDivs(-1)">&#10094;</button>
-                    <img src='./images/Icon/IconHome.png' alt='Icon Home' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/IconAbout.png' alt='Icon About' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/IconGallery.png' alt='Icon Gallery' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/IconContact.png' alt='Icon Contact' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/ReefHome.png' alt='Reef Home' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/ReefAbout.png' alt='Reef About' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/ReefMenu.png' alt='Reef Contact' class="icon-bottom-pics"/>
-                    <img src='./images/Icon/ReefContact.png' alt='Reef Menu' class="icon-bottom-pics"/>
-                    <button class="icon-pic-btn icon-btn-right" onclick="iconBottomPlusDivs(1)">&#10095;</button>
-                </div>
-            </div>
-
-    </div>
-    <div id='skills'>
-        <h2><a name='skills'>SKILLS</a></h2>
-        <div class='skills-logos'>
-            <div class='skill-item'>
-                <img src='./images/Logos/html5-color.svg' alt='html logo'/>
-                <h4>HTML5</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/css3-color.svg' alt='css logo'/>
-                <h4>CSS</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/sass.png' alt='sass logo'/>
-                <h4>Sass</h4>
-            </div>
-            <div class='skill-item item1'>
-                <img src='./images/Logos/javascript.svg' alt='javascript logo'/>
-                <h4>JavaScript</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/react.svg' alt='react logo'/>
-                <h4>React.JS</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/redux.svg' alt='redux logo'/>
-                <h4>Redux</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/nodejs.png' alt='node logo'/>
-                <h4>Node.JS</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/express.png' alt='express logo'/>
-                <h4>Express.JS</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/restfulapi.png' alt='restfull api logo'/>
-                <h4>RESTful API</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/postgresql.svg' alt='postgresql logo'/>
-                <h4>PostgreSQL</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/sql-database.png' alt='massive logo'/>
-                <h4>SQL</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/CLILogo.png' alt='git logo'/>
-                <h4>Command Line</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/git.svg' alt='git logo'/>
-                <h4>Git</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/GitHubLogo.png' alt='git logo'/>
-                <h4>GitHub</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/VSCodeLogo.png' alt='git logo'/>
-                <h4>Visual Studio <br/> Code</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/auth0.png' alt='auth0 logo'/>
-                <h4>Auth0</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/illustrator.png' alt='adobe illustrator logo'/>
-                <h4>Adobe<br/>Illustrator</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/adobe-xd.svg' alt='adobe xd logo'/>
-                <h4>Adobe Xd</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/photoshop.jpg' alt='adobe photoshop logo'/>
-                <h4>Adobe<br/>Photoshop</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/InDesign-icon.png' alt='adobe indesign logo'/>
-                <h4>Adobe<br/>InDesign</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/SketchLogo.png' alt='adobe photoshop logo'/>
-                <h4>Sketch</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/AWSLogo.png' alt='adobe illustrator logo'/>
-                <h4>AWS</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/CloudFrontIcon.png' alt='adobe xd logo'/>
-                <h4>CloudFront</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/CodePipelineIcon.png' alt='adobe photoshop logo'/>
-                <h4>CodePipeline</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/CodeBuildLogo.png' alt='adobe photoshop logo'/>
-                <h4>CodeBuild</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/CognitoIcon.png' alt='adobe illustrator logo'/>
-                <h4>Cognito</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/S3Icon.png' alt='adobe xd logo'/>
-                <h4>S3</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/Route53Icon.png' alt='adobe photoshop logo'/>
-                <h4>Route 53</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/LambdaIcon.png' alt='adobe photoshop logo'/>
-                <h4>Lambda</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/AsanaLogo.png' alt='adobe xd logo'/>
-                <h4>Asana</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/AgileIcon.png' alt='adobe photoshop logo'/>
-                <h4>Agile <br/> Development</h4>
-            </div>
-            <div class='skill-item'>
-                <img src='./images/Logos/ShopifyLogo.dms' alt='adobe photoshop logo'/>
-                <h4>Shopify</h4>
-            </div>
-        </div>
-    </div>
-    <div id='about'>
-        <h2><a name='about'>ABOUT</a></h2>
-        <div class='about-info'>
-            <img src='./images/picOfAustin.jpg' alt='pictures of austin'/>
-            <p>
-                    I like simple things, and well designed things.<br/>
-                    -<br/>
-                    Problems are fun for me to solve.<br/>
-                    -<br/>
-                    People know me as the guy who listens well.<br/>
-                    -<br/>
-                    Give me a guitar and I’ll play and sing a song.
-            </p>
-        </div>
-        <!-- <div class="goals">
-            <p>
-                I am a web developer with a passion for family, music, computers, technology, religion, and all things outdoors.
-                I became a web developer to be more immersed in the tech field where I can help create websites and applications
-                to make life better for people around the world.
-            </p>
-            <p>
-                I have been in school for a while focusing on web design and development. I received my Associates of Science degree from
-                Salt Lake Community College in General Studies where I focused on web design. I then transferred to Utah Valley University
-                in their Web Design and Development: Web and App Development program. After a couple semesters at UVU, I attended DevMountain
-                coding bootcamp and graduated with a certificate in JavaScript Web Development. I then went back to UVU to finish my BS degree
-                in Web and App Development. The reason I went back to UVU is because I know the importance of having a bachelors degree in this
-                industry. I have learned how to design and develop full-stack websites, but the Web and App Development program at UVU teaches
-                more than just developing websites. My education goal is to finish my bachelors in this program at UVU where I will learn things
-                like communicating design, learning the best file formats for images, video, and audio to use on the web and other place, and
-                learning how to work on a team and with clients. These things are vital for working in this industry.
-            </p>
-            <p>
-                My goal as an entry-level developer is to keep learning and growing. Web development is a fast growing industry which means I
-                have to stay on my toes to learn all that I can, and create all that I can to gain more knowledge and skills. I plan to keep
-                progressing by developing apps and websites using new languages and technologies to understand how they work. I will also progress
-                in this by working on teams at school, and working with clients outside of school and work to build great apps and websites.
-                My goal in doing this is to gain the knowledge, skills, and experience to eventually get a developer position at a great company
-                where I will utilize my skills and abilities to help build a great product, and to keep learning and growing from others on the
-                teams I will work on.
-            </p>
-            <p>
-                As I look into the future of this career in web and app development, I look forward to learning more of the new technologies and
-                languages that will come out. But with that, my goal is to gain as much knowledge and experience I can to then help other entry-level
-                and beginner developers in their careers and goals to become the best they can be. As an entry-level developer right now,
-                I desire to have mentors to help me learn, grow, and progress, and I eventually want to be that mentor for others as well.
-            </p>
-        </div>
-        <div id="experience">
-            <div class="experience-head"><p>EXPERIENCE</p></div>
-            <div class="uvu-job">
-                <h3>Web Frontend/UI Programmer</h3>
-                <h4>Utah Valley University</h4>
-                <p>Orem, UT | Nov 2018 - Present</p>
-                <div class="job-break"></div>
-                <p>
-                    Work in collaboration with Web Developers to ensure that all UVU web sites/systems are functioning correctly.
-                    Work with departments across campus to support and develop web pages based on departmental neeeds.
-                    Develop front facing department websites using OUCampus CMS, HTML, CSS, and JavaScript.
-                </p>
-            </div>
-            <div class="icon-job">
-                <h3>Web Developer and Designer</h3>
-                <h4>Icon Culinary</h4>
-                <p>Provo, UT | Jan 2018 - Present</p>
-                <div class="job-break"></div>
-                <p>
-                    Designed and developed a new website for Icon Culinary and their child company, Reef Cafe.
-                    Both websites are developed in React.js and Sass and are being continually developed.
-                    Designed the main logo for Icon Culinary using Adobe Illustrator.
-                    Designed and redesigning the restaurant digital signage menus for Reef Cafe using Adobe Illustrator.
-                    Developing a website for the menus where the internet browser of the TVs can go to to display the menus for the cafe.
-                </p>
-            </div>
-            <div class="route-job">
-                <h3>Front End Developer</h3>
-                <h4>Route App</h4>
-                <p>Lehi, UT | May 2018 - Oct 2018</p>
-                <div class="job-break"></div>
-                <p>
-                    Developed widget in JavaScript, HTML, and CSS to be installed on Shopify and API stores to add insurance to cutomer orders.
-                    Developed client dashboard using React, Redux, SCSS, and AWS Cognito for clients to see transaction and revenue data .
-                    Used axios http request to connect to backend endpoints to GET, POST, PUT, and DELETE data.
-                    Used Adobe Xd to wireframe, and Adobe Illustrator to design icons, logos, and graphics.
-                    Used Asana for Scrum and Agile sprints to keep track of tasks that are ready, in review, or completed.
-                    Hosted on AWS using S3, CloudFront, Route 53, CodeBuild, CodePipeline, and other AWS services.
-                </p>
-            </div>
-            <div class="experience-head"><p>EDUCATION</p></div>
-            <div class="education">
-                <h3>Bachelors in Web Design and Development: Web and App Development</h3>
-                <h4>Utah Valley University</h4>
-                <p>Orem, UT | Jan 2017 - Present</p>
-                <div class="job-break"></div>
-                <p>
-                        Use software including Adobe Illustrator, Photoshop, InDesign, Xd, and Sketch to study app development for
-                        mobile devices, web design, digital magazine publishing, and user experience design.
-                        Use web languages including HTML, CSS, SASS, and JavaScript to develop and build mobile friendly websites.
-                </p>
-            </div>
-            <div class="education">
-                <h3>Certificate in JavaScript Web Development</h3>
-                <h4><a href="https://www.devmountain.com" target="_blank">DevMountain<img src="./images//Logos//external-link.svg" alt="external link icon"/></a></h4>
-                <p>Provo, UT | Aug 2017 - May 2018</p>
-                <div class="job-break"></div>
-                <p>
-                    Students who receive this badge are comfortable working with Javascript to perform basic logic and algorithmic tasks.
-                    They can build full-stack applications using React, Node, Express, and SQL. Within React they learn components, state,
-                    props, Redux, and more. They know REST and how to build APIs that interact with an SQL database. They have created
-                    and hosted a live personal project. They have worked on a team to create a project as a group and host it live.
-                    <br/>
-                </p>
-                <a class="certificate" href="https://www.youracclaim.com/badges/7cf340bb-7d34-4434-8cbf-628ed52ecc3b/public_url" target="_blank">Certificate<img src="./images//Logos//external-link.svg" alt="external link icon"/></a>
-            </div>
-            <div class="education">
-                <h3>Associate of Science in General Studies</h3>
-                <h4>Salt Lake Community College</h4>
-                <p>Salt Lake City, UT | Jan 2013 - Dec 2018</p>
-                <div class="job-break"></div>
-                <p>
-                    Focused on Web Site Design and Digital Media Tools & Techniques.
-                </p>
-            </div>
-        </div> -->
-
-        <a href='mailto:wright2896@gmail.com' class='contact'>CONTACT ME<img src="./images/Logos/MailIcon.svg" alt="mail icon"/></a>
-        <div class='social-media'>
-            <a href='https://www.linkedin.com/in/theaustinwright' target='_blank'><img src='./images/Logos/linkedin-logo.png' alt='linkedin logo'/></a>
-            <a href='https://github.com/awguitar86' target='_blank'><img src='./images/Logos/guthub-logo.png' alt='guthub logo'/></a>
-            <a href='https://www.instagram.com/awguitar86/' target='_blank'><img src='./images/Logos/instagram-logo.png' alt='instagram logo'/></a>
-        </div>
-    </div>
-    <script>
-        //Lahna's Chocolates JS
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("lc-pics");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-        }
-
-        // Planappus JS
-        var planSlideIndex = 1;
-        planShowDivs(planSlideIndex);
-
-        function planPlusDivs(n) {
-            planShowDivs(planSlideIndex += n);
-        }
-
-        function planShowDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("planappus-pics");
-            if (n > x.length) {planSlideIndex = 1}
-            if (n < 1) {planSlideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[planSlideIndex-1].style.display = "block";
-        }
-
-        // Planappus bottom JS
-        var planBottomSlideIndex = 1;
-        planBottomShowDivs(planBottomSlideIndex);
-
-        function planBottomPlusDivs(n) {
-            planBottomShowDivs(planBottomSlideIndex += n);
-        }
-
-        function planBottomShowDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("plan-bottom-pics");
-            if (n > x.length) {planBottomSlideIndex = 1}
-            if (n < 1) {planBottomSlideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[planBottomSlideIndex-1].style.display = "block";
-        }
-
-        // Route JS
-        var routeSlideIndex = 1;
-        routeShowDivs(routeSlideIndex);
-
-        function routePlusDivs(n) {
-            routeShowDivs(routeSlideIndex += n);
-        }
-
-        function routeShowDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("route-pics");
-            if (n > x.length) {routeSlideIndex = 1}
-            if (n < 1) {routeSlideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[routeSlideIndex-1].style.display = "block";
-        }
-
-        // Icon JS
-        var iconSlideIndex = 1;
-        iconShowDivs(iconSlideIndex);
-
-        function iconPlusDivs(n) {
-            iconShowDivs(iconSlideIndex += n);
-        }
-
-        function iconShowDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("icon-pics");
-            if (n > x.length) {iconSlideIndex = 1}
-            if (n < 1) {iconSlideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[iconSlideIndex-1].style.display = "block";
-        }
-        // Icon Bottom JS
-        var iconBottomSlideIndex = 1;
-        iconBottomShowDivs(iconBottomSlideIndex);
-
-        function iconBottomPlusDivs(n) {
-            iconBottomShowDivs(iconBottomSlideIndex += n);
-        }
-
-        function iconBottomShowDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("icon-bottom-pics");
-            if (n > x.length) {iconBottomSlideIndex = 1}
-            if (n < 1) {iconBottomSlideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[iconBottomSlideIndex-1].style.display = "block";
-        }
-    </script>
+    <footer>
+        <p>©2019 Austin Wright &nbsp;&bull;&nbsp; Login</p>
+    </footer>
 </body>
 </html>
