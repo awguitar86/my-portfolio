@@ -4,6 +4,6 @@ $font: 'Livvic', sans-serif;
 
 $prime: #22BC31;
 
-$second: #f0c808;
+$second: darken($prime, 15%);
 
-$third: #06aed5;
+$third: lighten($prime, 25%);
