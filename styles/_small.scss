@@ -27,9 +27,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../zion.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('../images/angels-landing.jpg') no-repeat;
+    background-size: auto;
+    background-position: 8% 0%;
+    background-attachment: fixed;
 }
 .header-body {
     width: 100%;
