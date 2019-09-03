@@ -328,9 +328,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../zion.jpg") no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background: url("../images/angels-landing.jpg") no-repeat;
+  background-size: auto;
+  background-position: 8% 0%;
+  background-attachment: fixed; }
 
 .header-body {
   width: 100%;
@@ -427,7 +428,8 @@ footer {
 @media only screen and (min-width: 48rem) {
   @import url("https://fonts.googleapis.com/css?family=Gayathri:400,700&display=swap");
   header {
-    background-position: 0% 10%; }
+    background: url("../images/Zion-River.jpg") no-repeat;
+    background-position: 0% 0%; }
 
   .nav-body {
     justify-content: flex-start; }
@@ -450,7 +452,8 @@ footer {
 @media only screen and (min-width: 60rem) {
   @import url("https://fonts.googleapis.com/css?family=Gayathri:400,700&display=swap");
   header {
-    background-position: 0% 5%; }
+    background: url("../images/Zion-Dusk.jpg") no-repeat;
+    background-position: 50% 66%; }
 
   .header-body div {
     width: 60rem; }
