@@ -1,7 +1,11 @@
 @import './variables';
 
+
 header {
     width: 75rem;
+    div {
+        width: 73rem;
+    }
 }
 
 nav {
@@ -9,28 +13,25 @@ nav {
     justify-content: flex-start;
     a {
         width: 10%;
+        border: none;
+        border-right: solid 1px $prime;
     }
 }
 
+
 main {
     width: 75rem;
-    h2 {
+    h1 {
         width: 75rem;
     }
 }
 
-.hero {
+.members {
     width: 75rem;
-}
-
-.main-content {
-    width: 75rem;
-    p {
-        font-size: 14pt;
-    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
 }
 
 footer {
     width: 75rem;
-    height: 70px;
 }
