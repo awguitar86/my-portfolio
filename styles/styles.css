@@ -415,9 +415,11 @@ main {
   justify-content: flex-start; }
   .images figure {
     width: 100%;
-    margin-bottom: 10px; }
+    height: 0;
+    padding-bottom: 32%; }
     .images figure img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
 
 footer {
   width: 100vw;
