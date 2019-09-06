@@ -109,6 +109,7 @@ main {
             float: right;
             margin: 0px 0px 5px 5px;
             clip-path: circle(50%);
+            -webkit-clip-path: cricle(50%);
             shape-outside: circle(50%);
         }
         p {
