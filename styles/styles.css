@@ -408,11 +408,15 @@ main {
 
 .images {
   width: 100%;
-  margin-top: 30px; }
-  .images div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .images figure {
     width: 100%;
     margin-bottom: 10px; }
-    .images div img {
+    .images figure img {
       width: 100%; }
 
 footer {

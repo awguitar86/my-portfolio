@@ -77,21 +77,21 @@
             </div>
         </section>
         <div class="images">
-            <div class="lazyContainer"><img data-src="./images/live1.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live2.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live3.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live4.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live5.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live6.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live7.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live8.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live9.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live10.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live11.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live12.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live13.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live14.jpg" alt="concert"></div>
-            <div class="lazyContainer"><img data-src="./images/live15.jpg" alt="concert"></div>
+            <figure class="lazyContainer"><img data-src="./images/live1.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live2.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live3.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live4.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live5.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live6.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live7.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live8.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live9.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live10.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live11.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live12.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live13.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live14.jpg" alt="concert"></figure>
+            <figure class="lazyContainer"><img data-src="./images/live15.jpg" alt="concert"></figure>
         </div>
     </main>
     <footer>
@@ -100,16 +100,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
-        let lazyLoadInstances = [];
-        let lazyLazy = new LazyLoad({
-            elements_selector: ".lazyContainer",
-            callback_enter: function(el) {
+        (function(){
+            let lazyLoadInstances = [];
+            let callback_enter = function(el) {
                 let oneLL = new LazyLoad({
                     container: el
                 });
                 lazyLoadInstances.push(oneLL);
             }
-        });
+            let lazyLazy = new LazyLoad({
+                elements_selector: ".lazyContainer",
+                callback_enter: callback_enter
+            });
+        })();
     </script>
 </body>
 </html>
