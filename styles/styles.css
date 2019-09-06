@@ -400,6 +400,7 @@ main {
       float: right;
       margin: 0px 0px 5px 5px;
       clip-path: circle(50%);
+      -webkit-clip-path: cricle(50%);
       shape-outside: circle(50%); }
     .mbr div p {
       font-family: "Play", sans-serif;
@@ -408,9 +409,11 @@ main {
 .images {
   width: 100%;
   margin-top: 30px; }
-  .images img {
+  .images div {
     width: 100%;
     margin-bottom: 10px; }
+    .images div img {
+      width: 100%; }
 
 footer {
   width: 100vw;
