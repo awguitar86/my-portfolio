@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -337,102 +337,6 @@ template {
   display: none;
 }
 
-.Msmall-1 {
-  flex-basis: 6.3333333333%;
-}
-
-.Msmall-2 {
-  flex-basis: 14.6666666667%;
-}
-
-.Msmall-3 {
-  flex-basis: 23%;
-}
-
-.Msmall-4 {
-  flex-basis: 31.3333333333%;
-}
-
-.Msmall-5 {
-  flex-basis: 39.6666666667%;
-}
-
-.Msmall-6 {
-  flex-basis: 48%;
-}
-
-.Msmall-7 {
-  flex-basis: 56.3333333333%;
-}
-
-.Msmall-8 {
-  flex-basis: 64.6666666667%;
-}
-
-.Msmall-9 {
-  flex-basis: 73%;
-}
-
-.Msmall-10 {
-  flex-basis: 81.3333333333%;
-}
-
-.Msmall-11 {
-  flex-basis: 89.6666666667%;
-}
-
-.Msmall-12 {
-  flex-basis: 98%;
-}
-
-.small-1 {
-  flex-basis: 8.3333333333%;
-}
-
-.small-2 {
-  flex-basis: 16.6666666667%;
-}
-
-.small-3 {
-  flex-basis: 25%;
-}
-
-.small-4 {
-  flex-basis: 33.3333333333%;
-}
-
-.small-5 {
-  flex-basis: 41.6666666667%;
-}
-
-.small-6 {
-  flex-basis: 50%;
-}
-
-.small-7 {
-  flex-basis: 58.3333333333%;
-}
-
-.small-8 {
-  flex-basis: 66.6666666667%;
-}
-
-.small-9 {
-  flex-basis: 75%;
-}
-
-.small-10 {
-  flex-basis: 83.3333333333%;
-}
-
-.small-11 {
-  flex-basis: 91.6666666667%;
-}
-
-.small-12 {
-  flex-basis: 100%;
-}
-
 /* Prevent adjustments of font size when orientation changes  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -456,35 +360,15 @@ html, body {
 }
 
 header {
-  width: 100vw;
+  width: 95vw;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-top: solid 5px #a03123;
-  background: #346094;
+  justify-content: flex-start;
+  padding: 20px 0px 20px 0px;
 }
-
-.header-body {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.header-body div h1 {
-  font-size: 18pt;
-  font-family: "Lato", sans-serif;
-  color: white;
-  margin: 10px 0px 5px 0px;
-}
-.header-body div p {
-  font-size: 13pt;
-  font-family: "Lato", sans-serif;
-  color: white;
-  margin: 0px 0px 15px 0px;
-}
-.header-body input {
-  display: none;
+header img {
+  width: 120px;
+  height: 100%;
 }
 
 nav {
@@ -502,7 +386,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: #a03123;
+  background: #0071bc;
 }
 .nav-sm div {
   width: 95%;
@@ -524,18 +408,9 @@ nav {
   background: none;
   font-size: 16pt;
   font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   transition: ease-in-out 0.2s;
-}
-.nav-sm div input {
-  width: 40%;
-  height: 25px;
-  padding: 5px;
-  background: white;
-  font-family: "Lato", sans-serif;
-  border-radius: 4px;
-  border: none;
 }
 .nav-sm #dd-menu {
   width: 100%;
@@ -546,13 +421,13 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: solid 2px black;
+  border-top: solid 1px #c2c7c9;
   transition: ease-in-out 0.2s;
 }
 .nav-sm #dd-menu li {
   width: 100%;
   height: 50px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 1px #c2c7c9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,217 +437,98 @@ nav {
   height: 100%;
   text-decoration: none;
   color: white;
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .active {
-  background: #76241a;
+  background: #005289;
 }
 
 main {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  width: 95vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "one one" "two three" "four five" "six seven";
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.lawyers {
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin: 30px 0px 0px 0px;
-}
-.lawyers div {
-  width: 100%;
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 0px 3px 2px #888888;
-  border-radius: 5px;
-  margin-bottom: 15px;
 }
-.lawyers div h3 {
-  font-family: "Lato", sans-serif;
-}
-.lawyers div img {
+.content img {
   width: 100%;
   height: auto;
 }
-.lawyers div button {
-  width: 70%;
-  height: 40px;
-  margin: 10px 0px 10px 0px;
-  border: none;
-  background: #346094;
-  font-family: "Lato", sans-serif;
-  font-size: 11pt;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.lawyers div button:hover {
-  background: #27486e;
+.content h3 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
 
-.cta {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0px 30px 0px;
-}
-.cta button {
-  height: 60px;
-  border: none;
-  border-radius: 5px;
-  background: #d18a00;
-  font-family: "Lato", sans-serif;
-  font-size: 16pt;
-  color: white;
-  font-weight: 700;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.cta button:hover {
-  background: #9e6800;
+.one {
+  grid-area: one;
 }
 
-.blogs {
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.blogs div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 0px 5px 2px #888888;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.blogs div img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px 5px 0px 0px;
-}
-.blogs div h3 {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "Lato", sans-serif;
-}
-.blogs div p {
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-family: "Lato", sans-serif;
-  margin: 0px 0px 10px 0px;
-}
-.blogs div button {
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 0px 0px 5px 5px;
-  background: #346094;
-  color: white;
-  font-family: "Lato", sans-serif;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.blogs div button:hover {
-  background: #27486e;
+.two {
+  grid-area: two;
 }
 
-.tip-faq {
-  width: 95vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0px 20px 0px;
+.three {
+  grid-area: three;
 }
 
-.tip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #a03123;
-  box-shadow: 0px 0px 5px 2px #888888;
-  border-radius: 5px;
-}
-.tip h2, .tip p, .tip a {
-  font-family: "Lato", sans-serif;
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  margin: 8px 0px 8px 0px;
-}
-.tip a {
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.tip a:hover {
-  color: #220b08;
+.four {
+  grid-area: four;
 }
 
-.faq {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #a03123;
-  border-radius: 5px;
-  margin-top: 20px;
-  box-shadow: 0px 0px 5px 2px #888888;
+.five {
+  grid-area: five;
 }
-.faq h2, .faq p, .faq a {
-  font-family: "Lato", sans-serif;
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  margin: 8px 0px 8px 0px;
+
+.six {
+  grid-area: six;
 }
-.faq a {
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.faq a:hover {
-  color: #220b08;
+
+.seven {
+  grid-area: seven;
 }
 
 footer {
   width: 100vw;
+  background: #0071bc;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 footer p {
-  font-size: 32pt;
-  color: #346094;
-  margin: 20px 0px 20px 0px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+.footer-nav {
+  width: 95%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 20px;
+}
+.footer-nav div h3 {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.footer-nav div p {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  margin: 0;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -783,127 +539,7 @@ footer p {
 }
 
 @media only screen and (min-width: 48rem) {
-  @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-  .Mmedium-1 {
-    flex-basis: 6.3333333333%;
-  }
-
-  .Mmedium-2 {
-    flex-basis: 14.6666666667%;
-  }
-
-  .Mmedium-3 {
-    flex-basis: 23%;
-  }
-
-  .Mmedium-4 {
-    flex-basis: 31.3333333333%;
-  }
-
-  .Mmedium-5 {
-    flex-basis: 39.6666666667%;
-  }
-
-  .Mmedium-6 {
-    flex-basis: 48%;
-  }
-
-  .Mmedium-7 {
-    flex-basis: 56.3333333333%;
-  }
-
-  .Mmedium-8 {
-    flex-basis: 64.6666666667%;
-  }
-
-  .Mmedium-9 {
-    flex-basis: 73%;
-  }
-
-  .Mmedium-10 {
-    flex-basis: 81.3333333333%;
-  }
-
-  .Mmedium-11 {
-    flex-basis: 89.6666666667%;
-  }
-
-  .Mmedium-12 {
-    flex-basis: 98%;
-  }
-
-  .medium-1 {
-    flex-basis: 8.3333333333%;
-  }
-
-  .medium-2 {
-    flex-basis: 16.6666666667%;
-  }
-
-  .medium-3 {
-    flex-basis: 25%;
-  }
-
-  .medium-4 {
-    flex-basis: 33.3333333333%;
-  }
-
-  .medium-5 {
-    flex-basis: 41.6666666667%;
-  }
-
-  .medium-6 {
-    flex-basis: 50%;
-  }
-
-  .medium-7 {
-    flex-basis: 58.3333333333%;
-  }
-
-  .medium-8 {
-    flex-basis: 66.6666666667%;
-  }
-
-  .medium-9 {
-    flex-basis: 75%;
-  }
-
-  .medium-10 {
-    flex-basis: 83.3333333333%;
-  }
-
-  .medium-11 {
-    flex-basis: 91.6666666667%;
-  }
-
-  .medium-12 {
-    flex-basis: 100%;
-  }
-
-  .header-body {
-    height: 100px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .header-body div h1 {
-    font-size: 24pt;
-  }
-  .header-body div p {
-    font-size: 15pt;
-  }
-  .header-body input {
-    display: initial;
-    margin-bottom: 15px;
-    width: 30%;
-    height: 25px;
-    padding: 5px;
-    background: white;
-    font-family: "Lato", sans-serif;
-    border-radius: 4px;
-    border: none;
-  }
-
+  @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
   .nav-md-lg {
     width: 100%;
     height: 40px;
@@ -911,14 +547,14 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: #a03123;
+    background: #0071bc;
   }
   .nav-md-lg a {
-    width: 10%;
+    width: 14%;
     height: 100%;
     text-decoration: none;
     color: white;
-    font-family: "Lato", sans-serif;
+    font-family: "Nunito", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -928,171 +564,36 @@ footer p {
     display: none;
   }
 
-  .cta {
-    width: 95vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0px 20px 0px;
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "one one one" "two three four" "five six seven";
   }
 
-  .blogs {
-    justify-content: space-between;
-  }
-
-  .tip-faq {
+  .footer-nav {
+    width: 60%;
+    grid-template-columns: repeat(2, 150px);
     justify-content: space-between;
   }
 }
 /* end of media query */
-@media only screen and (min-width: 75rem) {
-  @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
-  .Mlarge-1 {
-    flex-basis: 6.3333333333%;
-  }
-
-  .Mlarge-2 {
-    flex-basis: 14.6666666667%;
-  }
-
-  .Mlarge-3 {
-    flex-basis: 23%;
-  }
-
-  .Mlarge-4 {
-    flex-basis: 31.3333333333%;
-  }
-
-  .Mlarge-5 {
-    flex-basis: 39.6666666667%;
-  }
-
-  .Mlarge-6 {
-    flex-basis: 48%;
-  }
-
-  .Mlarge-7 {
-    flex-basis: 56.3333333333%;
-  }
-
-  .Mlarge-8 {
-    flex-basis: 64.6666666667%;
-  }
-
-  .Mlarge-9 {
-    flex-basis: 73%;
-  }
-
-  .Mlarge-10 {
-    flex-basis: 81.3333333333%;
-  }
-
-  .Mlarge-11 {
-    flex-basis: 89.6666666667%;
-  }
-
-  .Mlarge-12 {
-    flex-basis: 98%;
-  }
-
-  .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-
-  .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-
-  .large-3 {
-    flex-basis: 25%;
-  }
-
-  .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-
-  .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-
-  .large-6 {
-    flex-basis: 50%;
-  }
-
-  .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-
-  .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-
-  .large-9 {
-    flex-basis: 75%;
-  }
-
-  .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-
-  .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-
-  .large-12 {
-    flex-basis: 100%;
-  }
-
-  .header-body {
-    width: 75rem;
-  }
-
-  nav {
-    width: 75rem;
+@media only screen and (min-width: 80rem) {
+  @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+  .nav-md-lg a {
+    width: 10%;
   }
 
   main {
-    width: 75rem;
+    width: 80rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "one one one two" "one one one three" "four five six seven";
   }
 
-  .lawyers {
-    width: 75rem;
-    justify-content: center;
-  }
-  .lawyers div {
-    margin: 0px 10px 0px 10px;
-  }
-
-  .cta {
-    width: 75rem;
-    justify-content: center;
-  }
-  .cta .large-4 {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
-  .blogs {
-    width: 75rem;
-  }
-
-  .tip-faq {
-    width: 75rem;
-  }
-
-  .faq {
-    height: 100%;
-    margin-top: 0;
-  }
-  .faq h2, .faq p, .faq a {
-    width: 90%;
-  }
-
-  footer {
-    width: 75rem;
-  }
-  footer p {
-    width: 20%;
+  .footer-nav {
+    width: 80%;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 /* end of media query */

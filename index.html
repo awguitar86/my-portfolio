@@ -4,170 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Law Firm</title>
+    <title>News</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <script src="https://kit.fontawesome.com/5baca2d7f5.js"></script>
 </head>
 <body>
-    <!--comment-->
+
     <header>
-        <div class="header-body">
-            <div>
-                <h1>Pearson, Specter, Ross, & Zane</h1>
-                <p>We'll kick the bad guys butt for you.</p>
-            </div>
-            <input type="text" placeholder="Search...">
-        </div>
+        <img src="./images/logo.svg" alt="logo"/>
     </header>
 
     <nav>
         <div class="nav-md-lg">
             <a href="#">Home</a>
-            <a href="#" class="active">Attorneys</a>
-            <a href="#">Practices</a>
-            <a href="#">About Us</a>
-            <a href="#">News</a>
-            <a href="#">Links</a>
+            <a href="#">Opinion</a>
+            <a href="#" class="active">Technology</a>
+            <a href="#">Business</a>
         </div>
         <div class="nav-sm">
             <div>
                 <button id="menu" onclick="showMenu()">&#9776;</button>
                 <button id="x" onclick="hideMenu()">X</button>
-                <input type="text" placeholder="Search...">
             </div>
             <ul id="dd-menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Attorneys</a></li>
-                <li><a href="#">Practices</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Links</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#" class="active">Technology</a></li>
+                <li><a href="#">Business</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section class="lawyers">
-            <div class="Msmall-6 Mmedium-3 large-2">
-                <h3>Jessica Pearson</h3>
-                <img src="./images/pearson.jpg" alt="Jessica Pearson">
-                <button>LEARN MORE</button>
-            </div>
-            <div class="Msmall-6 Mmedium-3 large-2">
-                <h3>Harvey Specter</h3>
-                <img src="./images/specter.jpg" alt="Harvey Specter">
-                <button>LEARN MORE</button>
-            </div>
-            <div class="Msmall-6 Mmedium-3 large-2">
-                <h3>Mike Ross</h3>
-                <img src="./images/ross.jpg" alt="Mike Ross">
-                <button>LEARN MORE</button>
-            </div>
-            <div class="Msmall-6 Mmedium-3 large-2">
-                <h3>Rachel Zane</h3>
-                <img src="./images/zane.jpg" alt="Rachel Zane">
-                <button>LEARN MORE</button>
-            </div>
-        </section>
-        <section class="cta">
-            <button class="small-10 Mmedium-4 large-3">CLIENTS</button>
-            <button class="small-10 Mmedium-4 large-4">TOUR CASE REVIEW</button>
-            <button class="small-10 Mmedium-4 large-3">FAMOUS CASES</button>
-        </section>
-        <section class="blogs">
-            <div class="small-12 Mmedium-6 Mlarge-3">
-                <img src="./images/courthouse.jpg" alt="Court House">
-                <h3>Blog Post</h3>
-                <p>
-                    Products derived from the Standard Version of the Work, you may always
-                    be distributed and/or modified under the License terms as they pertain
-                    to the terms and conditions. This License Agreement shall terminate if
-                    it is `author-maintained'.
-                </p>
-                <button>READ MORE</button>
-            </div>
-            <div class="small-12 Mmedium-6 Mlarge-3">
-                <img src="./images/chess.jpg" alt="Chess">
-                <h3>Blog Post</h3>
-                <p>
-                    Products derived from the Standard Version of the Work, you may always
-                    be distributed and/or modified under the License terms as they pertain
-                    to the terms and conditions. This License Agreement shall terminate if
-                    it is `author-maintained'.
-                </p>
-                <button>READ MORE</button>
-            </div>
-            <div class="small-12 Mmedium-6 Mlarge-3">
-                <img src="./images/library.jpg" alt="Library">
-                <h3>Blog Post</h3>
-                <p>
-                    Products derived from the Standard Version of the Work, you may always
-                    be distributed and/or modified under the License terms as they pertain
-                    to the terms and conditions. This License Agreement shall terminate if
-                    it is `author-maintained'.
-                </p>
-                <button>READ MORE</button>
-            </div>
-            <div class="small-12 Mmedium-6 Mlarge-3">
-                <img src="./images/writing.jpg" alt="A Man Writing">
-                <h3>Blog Post</h3>
-                <p>
-                    Products derived from the Standard Version of the Work, you may always
-                    be distributed and/or modified under the License terms as they pertain
-                    to the terms and conditions. This License Agreement shall terminate if
-                    it is `author-maintained'.
-                </p>
-                <button>READ MORE</button>
-            </div>
-        </section>
-        <section class="tip-faq">
-            <div class="tip small-12 Mlarge-6">
-                <h2>Tip of the Day</h2>
-                <p>
-                    Products derived from the Standard Version of the Work, you may always
-                    be distributed and/or modified under the License terms as they pertain
-                    to the terms and conditions. This License Agreement shall terminate if
-                    it is `author-maintained'. The Work has the right to control compilation
-                    and installation of an executable program, or a future version of this Agreement.
-                </p>
-                <a href="#">READ MORE</a>
-            </div>
-            <div class="faq small-12 Mmedium-4 Mlarge-2">
-                <h2>FAQ #1</h2>
-                <p>
-                Products derived from the Standard Version of the Work, you may always
-                be distributed and/or modified.
-                </p>
-                <a href="#">READ MORE</a>
-            </div>
-            <div class="faq small-12 Mmedium-4 Mlarge-2">
-                <h2>FAQ #2</h2>
-                <p>
-                Products derived from the Standard Version of the Work, you may always
-                be distributed and/or modified.
-                </p>
-                <a href="#">READ MORE</a>
-            </div>
-            <div class="faq small-12 Mmedium-4 Mlarge-2">
-                <h2>FAQ #3</h2>
-                <p>
-                Products derived from the Standard Version of the Work, you may always
-                be distributed and/or modified.
-                </p>
-                <a href="#">READ MORE</a>
-            </div>
-        </section>
+        <div class="content one">
+            <img src="./images/applestore.jpg" alt="apple store">
+            <h3>New Apple Store Newly Remodeled</h3>
+        </div>
+        <div class="content two">
+            <img src="./images/macbook.jpg" alt="macbook pro">
+            <h3>Is Apple Working on a New Revamped Macbook Pro?</h3>
+        </div>
+        <div class="content three">
+            <img src="./images/iphone.jpg" alt="iphone">
+            <h3>Is the New iPhone 11 Worth It?</h3>
+        </div>
+        <div class="content four">
+            <img src="./images/ipad.jpg" alt="ipad">
+            <h3>You're Crazy if You Haven't Bought a New iPad Yet!</h3>
+        </div>
+        <div class="content five">
+            <img src="./images/applewatch.jpg" alt="apple watch">
+            <h3>How the Apple Watch Saved This Man's Life.</h3>
+        </div>
+        <div class="content six">
+            <img src="./images/airpods.jpg" alt="airpods">
+            <h3>Are Airpods The Best Headphones on The Market?</h3>
+        </div>
+        <div class="content seven">
+            <img src="./images/iphoneVSgalaxys10.jpg" alt="iphone vs galaxy s10">
+            <h3>iPhone 11 vs amsng Galaxy S10</h3>
+        </div>
     </main>
 
     <footer>
-        <p>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-linkedin"></i>
-        </p>
+        <div class="footer-nav">
+            <div>
+                <h3>SECTIONS</h3>
+                <p>Home</p>
+                <p>Video</p>
+                <p>Opinion</p>
+                <p>Entertainment</p>
+                <p>Health</p>
+            </div>
+            <div>
+                <h3>SHOWS</h3>
+                <p>Happenings</p>
+                <p>Sunday AM</p>
+                <p>Newsroom</p>
+                <p>World</p>
+            </div>
+            <div>
+                <h3>TOOLS</h3>
+                <p>Jobs</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+                <p>Media Relations</p>
+            </div>
+            <div>
+                <h3>PERSONALITIES</h3>
+                <p>Freddy Fredricks</p>
+                <p>Sirus Smith</p>
+                <p>Molly Matters</p>
+                <p>Greg Gregson</p>
+                <p>Harry Harrison</p>
+            </div>
+        </div>
+        <p>© 2109 • All rights reserved • Austin Wright</p>
     </footer>
-
     <script>
         const hamburger = document.getElementById("menu");
         const x = document.getElementById('x');
