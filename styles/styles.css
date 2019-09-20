@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -360,15 +360,22 @@ html, body {
 }
 
 header {
-  width: 95vw;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 20px 0px 20px 0px;
+  background: url("../images/headerimg.jpg") no-repeat;
+  background-size: auto;
+  background-position: 0% -8%;
+  background-attachment: fixed;
 }
-header img {
-  width: 120px;
-  height: 100%;
+header h1, header h3 {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 10px;
+  color: white;
 }
 
 nav {
@@ -386,14 +393,15 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: #0071bc;
 }
 .nav-sm div {
-  width: 95%;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  background: #197bbd;
+  background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
 }
 .nav-sm div #menu {
   border: none;
@@ -401,6 +409,7 @@ nav {
   font-size: 16pt;
   font-weight: bold;
   color: white;
+  margin-left: 10px;
 }
 .nav-sm div #x {
   display: none;
@@ -408,8 +417,9 @@ nav {
   background: none;
   font-size: 16pt;
   font-weight: bold;
-  font-family: "Nunito", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
+  margin-left: 10px;
   transition: ease-in-out 0.2s;
 }
 .nav-sm #dd-menu {
@@ -421,13 +431,14 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: solid 1px #c2c7c9;
+  border-top: solid 1px #ffc845;
   transition: ease-in-out 0.2s;
+  background: #197bbd;
 }
 .nav-sm #dd-menu li {
   width: 100%;
   height: 50px;
-  border-bottom: solid 1px #c2c7c9;
+  border-bottom: solid 1px #ffc845;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,98 +448,114 @@ nav {
   height: 100%;
   text-decoration: none;
   color: white;
-  font-family: "Nunito", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .active {
-  background: #005289;
+  background: #0d4063;
 }
 
 main {
-  width: 95vw;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "one one" "two three" "four five" "six seven";
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.content {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
-.content img {
+
+.hero {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.hero h3 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 250px;
+}
+.hero img {
   width: 100%;
-  height: auto;
-}
-.content h3 {
-  font-family: "Nunito", sans-serif;
-  text-align: center;
+  height: 300px;
 }
 
-.one {
-  grid-area: one;
+.content {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.content h1 {
+  font-family: "Titillium Web", sans-serif;
+  width: 95%;
+  text-align: left;
 }
 
-.two {
-  grid-area: two;
+.cards {
+  width: 95vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.three {
-  grid-area: three;
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
-.four {
-  grid-area: four;
+.card-solid-color {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #197bbd;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
-
-.five {
-  grid-area: five;
+.card-solid-color:hover {
+  opacity: 0;
 }
-
-.six {
-  grid-area: six;
+.card-solid-color h3 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20pt;
+  margin: 0;
 }
-
-.seven {
-  grid-area: seven;
+.card-solid-color p {
+  font-size: 32pt;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 footer {
   width: 100vw;
-  background: #0071bc;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
+  background: #197bbd;
 }
 footer p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
-}
-
-.footer-nav {
-  width: 95%;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  margin-top: 20px;
-}
-.footer-nav div h3 {
-  font-family: "Nunito", sans-serif;
-  color: white;
-  margin: 0;
-  margin-bottom: 5px;
-}
-.footer-nav div p {
-  font-family: "Nunito", sans-serif;
-  color: white;
-  margin: 0;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -539,7 +566,16 @@ footer p {
 }
 
 @media only screen and (min-width: 48rem) {
-  @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+  header {
+    padding: 30px 0px 30px 0px;
+    background-position: 0% -4%;
+  }
+
+  .hero img {
+    height: 100%;
+  }
+
   .nav-md-lg {
     width: 100%;
     height: 40px;
@@ -547,14 +583,15 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: #0071bc;
+    background: #197bbd;
+    background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
   }
   .nav-md-lg a {
-    width: 14%;
+    width: 13%;
     height: 100%;
     text-decoration: none;
     color: white;
-    font-family: "Nunito", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,36 +601,52 @@ footer p {
     display: none;
   }
 
-  main {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "one one one" "two three four" "five six seven";
-  }
-
-  .footer-nav {
-    width: 60%;
-    grid-template-columns: repeat(2, 150px);
-    justify-content: space-between;
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* end of media query */
-@media only screen and (min-width: 80rem) {
-  @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
-  .nav-md-lg a {
-    width: 10%;
+@media only screen and (min-width: 64rem) {
+  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+  header {
+    width: 64rem;
+    background-size: 64rem 400px;
+    background-position: center -5%;
+  }
+
+  nav {
+    width: 64rem;
   }
 
   main {
-    width: 80rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "one one one two" "one one one three" "four five six seven";
+    width: 64rem;
   }
 
-  .footer-nav {
-    width: 80%;
-    grid-template-columns: repeat(4, 150px);
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 20px;
+  .hero {
+    width: 64rem;
+  }
+  .hero h3 {
+    margin-top: 350px;
+  }
+
+  .content {
+    width: 64rem;
+  }
+
+  .cards {
+    width: 64rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card-solid-color h3 {
+    font-size: 16pt;
+  }
+  .card-solid-color p {
+    font-size: 32pt;
+  }
+
+  footer {
+    width: 64rem;
   }
 }
 /* end of media query */

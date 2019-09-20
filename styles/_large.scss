@@ -1,24 +1,44 @@
 @import './variables';
 
-.nav-md-lg {
-    a {
-        width: 10%;
-    }
+header {
+    width: 64rem;
+    background-size: 64rem 400px;
+    background-position: center -5%;
+}
+
+nav {
+    width: 64rem;
 }
 
 main {
-    width: 80rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-        "one one one two"
-        "one one one three"
-        "four five six seven";
+    width: 64rem;
 }
 
-.footer-nav {
-    width: 80%;
-    grid-template-columns: repeat(4, 150px);
-    justify-content: space-between; 
-    margin-top: 40px;
-    margin-bottom: 20px;
+.hero {
+    width: 64rem;
+    h3 {
+        margin-top: 350px;
+    }
+}
+
+.content {
+    width: 64rem;
+}
+
+.cards {
+    width: 64rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-solid-color {
+    h3 {
+        font-size: 16pt;
+    }
+    p {
+        font-size: 32pt;
+    }
+}
+
+footer {
+    width: 64rem;
 }
