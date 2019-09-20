@@ -38,3 +38,8 @@ header {
 .cards {
     grid-template-columns: repeat(2, 1fr);
 }
+.card-solid-color {
+    img {
+        width: 60px;
+    }
+}

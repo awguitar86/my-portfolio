@@ -539,10 +539,9 @@ main {
   font-size: 20pt;
   margin: 0;
 }
-.card-solid-color p {
-  font-size: 32pt;
-  color: white;
-  margin: 0;
+.card-solid-color img {
+  width: 100px;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -603,6 +602,10 @@ footer p {
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-solid-color img {
+    width: 60px;
   }
 }
 /* end of media query */
