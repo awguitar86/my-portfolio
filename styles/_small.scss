@@ -23,15 +23,9 @@ html, body {
 
 header {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     padding: 20px 0px 20px 0px;
     background: url('../images/headerimg.jpg') no-repeat;
-    background-size: auto;
-    background-position: 0% -8%;
-    background-attachment: fixed;
+    background-position: 0% 5%;
     h1, h3 {
         margin: 0;
         font-family: $font;

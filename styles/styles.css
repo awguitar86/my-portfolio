@@ -361,15 +361,9 @@ html, body {
 
 header {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   padding: 20px 0px 20px 0px;
   background: url("../images/headerimg.jpg") no-repeat;
-  background-size: auto;
-  background-position: 0% -8%;
-  background-attachment: fixed;
+  background-position: 0% 5%;
 }
 header h1, header h3 {
   margin: 0;
@@ -568,7 +562,6 @@ footer p {
   @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
   header {
     padding: 30px 0px 30px 0px;
-    background-position: 0% -4%;
   }
 
   .hero img {
@@ -613,8 +606,6 @@ footer p {
   @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
   header {
     width: 64rem;
-    background-size: 64rem 400px;
-    background-position: center -5%;
   }
 
   nav {
