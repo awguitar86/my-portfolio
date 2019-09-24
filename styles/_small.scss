@@ -23,92 +23,15 @@ html, body {
 
 header {
     width: 100vw;
-    padding: 20px 0px 20px 0px;
-    background: url('../images/headerimg.jpg') no-repeat;
-    background-position: 0% 5%;
-    h1, h3 {
-        margin: 0;
-        font-family: $font;
-        margin-left: 10px;
-        color: white;
-    }
-}
-
-nav {
-    width: 100%;
+    height: 50px;
+    background: $prime;
     display: flex;
-}
-.nav-md-lg {
-    display: none;
-}
-.nav-sm {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;  
-    div {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        background: $prime;
-        background: linear-gradient(0deg, darken($prime, 20%) 0%, $prime 100%);
-        #menu {
-            border: none;
-            background: none;
-            font-size: 16pt;
-            font-weight: bold;
-            color: white;
-            margin-left: 10px;
-        }
-        #x {
-            display: none;
-            border: none;
-            background: none;
-            font-size: 16pt;
-            font-weight: bold;
-            font-family: $font;
-            color: white;
-            margin-left: 10px;
-            transition: ease-in-out 0.2s;
-        }
+    h2 {
+        font-family: $font;
+        color: white;
+        margin-left: 10px;
     }
-    #dd-menu {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        border-top: solid 1px $second;
-        transition: ease-in-out 0.2s;
-        background: $prime;
-        li {
-            width: 100%;
-            height: 50px;
-            border-bottom: solid 1px $second;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a {
-                width: 100%;
-                height: 100%;
-                text-decoration: none;
-                color: white;
-                font-family: $font;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-}
-.active {
-    background: darken($prime, 20%);
 }
 
 main {
@@ -116,97 +39,167 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
 }
-
-.hero {
-    width: 100vw;
-    position: relative;
-    h3 {
-        color: white;
+.locations-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: $second;
+    h2 {
         font-family: $font;
-        position: absolute;
+        color: $prime;
         margin-left: 10px;
-        margin-top: 250px;
-    }
-    img {
-        width: 100%;
-        height: auto;
     }
 }
-
-.content {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    h1 {
-        font-family: $font;
-        width: 95%;
-        text-align: left;
-    }
-}
-
-.cards {
-    width: 95vw;
+section {
+    width: 100%;
     display: grid;
-    grid-gap: 20px;
+    gap: 20px;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
 }
-
-.card {
+.location {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.card-solid-color {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     background: $prime;
-    transition: ease-in-out 0.2s;
-    cursor: pointer;
-    &:hover {
-        opacity: 0;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grand-hotel {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/grandHotel.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
     h3 {
-        color: white;
         font-family: $font;
-        font-size: 20pt;
-        margin: 0;
-    }
-    img {
-        width: 100px;
-        height: auto;
-        margin-bottom: 20px;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
     }
 }
-
-footer {
-    width: 100vw;
+.miami {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/resort.jpg') no-repeat;
+    background-position: center;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.singapore {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/singapore.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.hawaii {
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    background: url('../images/tropical.jpg') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    h3 {
+        font-family: $font;
+        color: white;
+        margin: 0px 0px 10px 10px;
+        text-shadow: 0px 0px 10px black;
+    }
+}
+.info-wrap {
+    width: 90%;
+    display: flex;
+}
+.address {
+    width: 50%;
+    display: flex;
     align-items: center;
-    background: $prime;
+    img {
+        width: 40px;
+        height: auto;
+    }
     p {
         font-family: $font;
-        color: white;
+        font-size: 11pt;
+        color: $second;
     }
 }
+.phone {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+        width: 40px;
+        height: auto;
+    }
+    p {
+        font-family: $font;
+        font-size: 11pt;
+        color: $second;
+    }
+}
+
+
+
+nav {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    button {
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $second;
+        border: solid 1px $prime;
+        img {
+            width: 30px;
+            height: auto;
+        }
+        #location-blue {
+            width: 22px;
+            height: auto;
+        }
+        h4 {
+            margin: 0;
+            margin-top: 6px;
+            font-family: $font;
+            color: $prime;
+            font-size: 11pt;
+        }
+    }
+    #active {
+        background: darken($second, 15%);
+    }
+}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

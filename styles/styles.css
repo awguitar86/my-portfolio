@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -361,95 +361,15 @@ html, body {
 
 header {
   width: 100vw;
-  padding: 20px 0px 20px 0px;
-  background: url("../images/headerimg.jpg") no-repeat;
-  background-position: 0% 5%;
-}
-header h1, header h3 {
-  margin: 0;
-  font-family: "Titillium Web", sans-serif;
-  margin-left: 10px;
-  color: white;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-}
-
-.nav-md-lg {
-  display: none;
-}
-
-.nav-sm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.nav-sm div {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: #197bbd;
-  background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
-}
-.nav-sm div #menu {
-  border: none;
-  background: none;
-  font-size: 16pt;
-  font-weight: bold;
-  color: white;
-  margin-left: 10px;
-}
-.nav-sm div #x {
-  display: none;
-  border: none;
-  background: none;
-  font-size: 16pt;
-  font-weight: bold;
-  font-family: "Titillium Web", sans-serif;
-  color: white;
-  margin-left: 10px;
-  transition: ease-in-out 0.2s;
-}
-.nav-sm #dd-menu {
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: solid 1px #ffc845;
-  transition: ease-in-out 0.2s;
-  background: #197bbd;
-}
-.nav-sm #dd-menu li {
-  width: 100%;
   height: 50px;
-  border-bottom: solid 1px #ffc845;
+  background: #145c9e;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.nav-sm #dd-menu li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+header h2 {
+  font-family: "Tenor Sans", sans-serif;
   color: white;
-  font-family: "Titillium Web", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.active {
-  background: #0d4063;
+  margin-left: 10px;
 }
 
 main {
@@ -457,96 +377,173 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
 }
 
-.hero {
-  width: 100vw;
-  position: relative;
+.locations-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: #cbb9a8;
 }
-.hero h3 {
-  color: white;
-  font-family: "Titillium Web", sans-serif;
-  position: absolute;
+.locations-header h2 {
+  font-family: "Tenor Sans", sans-serif;
+  color: #145c9e;
   margin-left: 10px;
-  margin-top: 250px;
 }
-.hero img {
+
+section {
   width: 100%;
-  height: auto;
-}
-
-.content {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.content h1 {
-  font-family: "Titillium Web", sans-serif;
-  width: 95%;
-  text-align: left;
-}
-
-.cards {
-  width: 95vw;
   display: grid;
-  grid-gap: 20px;
+  gap: 20px;
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto);
 }
 
-.card {
+.location {
   width: 100%;
+  background: #145c9e;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-}
-.card img {
-  width: 100%;
-  height: 100%;
 }
 
-.card-solid-color {
-  width: 100%;
-  height: 100%;
+.grand-hotel {
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  background: url("../images/grandHotel.jpg") no-repeat;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #197bbd;
-  transition: ease-in-out 0.2s;
-  cursor: pointer;
+  align-items: flex-end;
+  border-radius: 5px;
 }
-.card-solid-color:hover {
-  opacity: 0;
-}
-.card-solid-color h3 {
+.grand-hotel h3 {
+  font-family: "Tenor Sans", sans-serif;
   color: white;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 20pt;
-  margin: 0;
+  margin: 0px 0px 10px 10px;
+  text-shadow: 0px 0px 10px black;
 }
-.card-solid-color img {
-  width: 100px;
+
+.miami {
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  background: url("../images/resort.jpg") no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+.miami h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: white;
+  margin: 0px 0px 10px 10px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.singapore {
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  background: url("../images/singapore.jpg") no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+.singapore h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: white;
+  margin: 0px 0px 10px 10px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.hawaii {
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  background: url("../images/tropical.jpg") no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+}
+.hawaii h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: white;
+  margin: 0px 0px 10px 10px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.info-wrap {
+  width: 90%;
+  display: flex;
+}
+
+.address {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.address img {
+  width: 40px;
   height: auto;
-  margin-bottom: 20px;
+}
+.address p {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 11pt;
+  color: #cbb9a8;
 }
 
-footer {
-  width: 100vw;
+.phone {
+  width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #197bbd;
+  justify-content: flex-end;
 }
-footer p {
-  font-family: "Titillium Web", sans-serif;
-  color: white;
+.phone img {
+  width: 40px;
+  height: auto;
+}
+.phone p {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 11pt;
+  color: #cbb9a8;
+}
+
+nav {
+  width: 100vw;
+  height: 75px;
+  display: flex;
+}
+nav button {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #cbb9a8;
+  border: solid 1px #145c9e;
+}
+nav button img {
+  width: 30px;
+  height: auto;
+}
+nav button #location-blue {
+  width: 22px;
+  height: auto;
+}
+nav button h4 {
+  margin: 0;
+  margin-top: 6px;
+  font-family: "Tenor Sans", sans-serif;
+  color: #145c9e;
+  font-size: 11pt;
+}
+nav #active {
+  background: #ae9278;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -556,85 +553,11 @@ footer p {
   clear: both;
 }
 
-@media only screen and (min-width: 48rem) {
-  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-  header {
-    padding: 30px 0px 30px 0px;
-  }
-
-  .nav-md-lg {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    background: #197bbd;
-    background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
-  }
-  .nav-md-lg a {
-    width: 13%;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-    font-family: "Titillium Web", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-sm {
-    display: none;
-  }
-
-  .cards {
+@media only screen and (min-width: 36rem) {
+  @import url("https://fonts.googleapis.com/css?family=Tenor+Sans&display=swap");
+  section {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-solid-color img {
-    width: 60px;
-  }
-}
-/* end of media query */
-@media only screen and (min-width: 64rem) {
-  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-  header {
-    width: 64rem;
-  }
-
-  nav {
-    width: 64rem;
-  }
-
-  main {
-    width: 64rem;
-  }
-
-  .hero {
-    width: 64rem;
-  }
-  .hero h3 {
-    margin-top: 350px;
-  }
-
-  .content {
-    width: 64rem;
-  }
-
-  .cards {
-    width: 64rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .card-solid-color h3 {
-    font-size: 16pt;
-  }
-  .card-solid-color p {
-    font-size: 32pt;
-  }
-
-  footer {
-    width: 64rem;
+    grid-template-rows: repeat(2, auto);
   }
 }
 /* end of media query */
