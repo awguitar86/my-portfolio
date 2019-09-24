@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -361,23 +361,40 @@ html, body {
 
 header {
   width: 100vw;
-  padding: 20px 0px 20px 0px;
-  background: url("../images/headerimg.jpg") no-repeat;
-  background-position: 0% 5%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-header h1, header h3 {
-  margin: 0;
-  font-family: "Titillium Web", sans-serif;
-  margin-left: 10px;
-  color: white;
+header a {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: black;
+}
+header a img {
+  width: 60px;
+  height: 100%;
+  margin-right: 10px;
+}
+header a h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 18pt;
 }
 
 nav {
   width: 100%;
   display: flex;
+  position: relative;
 }
 
 .nav-md-lg {
+  display: none;
+}
+
+#sub-nav {
   display: none;
 }
 
@@ -394,8 +411,8 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #197bbd;
-  background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
+  background: #a32400;
+  background: linear-gradient(0deg, #a32400 20%, #f3a217 100%);
 }
 .nav-sm div #menu {
   border: none;
@@ -411,7 +428,7 @@ nav {
   background: none;
   font-size: 16pt;
   font-weight: bold;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: white;
   margin-left: 10px;
   transition: ease-in-out 0.2s;
@@ -425,31 +442,53 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: solid 1px #ffc845;
+  border-top: solid 1px white;
   transition: ease-in-out 0.2s;
-  background: #197bbd;
+  background: #a32400;
 }
-.nav-sm #dd-menu li {
+.nav-sm #dd-menu .dd-item {
   width: 100%;
   height: 50px;
-  border-bottom: solid 1px #ffc845;
+  border-bottom: solid 1px white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
-.nav-sm #dd-menu li a {
+.nav-sm #dd-menu .dd-item a {
   width: 100%;
   height: 100%;
   text-decoration: none;
   color: white;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Orbitron", sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 20px;
+}
+.nav-sm #dd-sub-menu {
+  width: 100%;
+  height: 120px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-sm #dd-sub-menu a {
+  width: 100%;
+  height: 40px;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  background: #a32400;
+  border-bottom: solid 1px white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
 }
 
-.active {
-  background: #0d4063;
+#active {
+  background: #701900;
 }
 
 main {
@@ -457,97 +496,163 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
-}
-
-.hero {
-  width: 100vw;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-}
-.hero h3 {
-  color: white;
-  font-family: "Titillium Web", sans-serif;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 250px;
-}
-.hero img {
-  width: 100%;
-  height: 300px;
-}
-
-.content {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.content h1 {
-  font-family: "Titillium Web", sans-serif;
-  width: 95%;
-  text-align: left;
-}
-
-.cards {
-  width: 95vw;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.card img {
-  width: 100%;
-  height: 100%;
-}
-
-.card-solid-color {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #197bbd;
-  transition: ease-in-out 0.2s;
-  cursor: pointer;
+  margin-bottom: 30px;
 }
-.card-solid-color:hover {
-  opacity: 0;
+main h1 {
+  font-family: "Orbitron", sans-serif;
 }
-.card-solid-color h3 {
+main h2 {
+  font-family: "Orbitron", sans-serif;
+}
+
+form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+form h3 {
+  font-family: "Orbitron", sans-serif;
+  margin: 20px 0px 5px 0px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+.info label {
+  font-family: "Orbitron", sans-serif;
+}
+.info input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.swag {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+.swag label {
+  font-family: "Orbitron", sans-serif;
+}
+.swag input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+}
+.swag select {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  border: solid 1px grey;
+  border-radius: 5px;
+}
+.swag #radio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Orbitron", sans-serif;
+  font-size: 10pt;
+  margin-top: 10px;
+}
+.swag #radio input {
+  width: 10px;
+  height: 5px;
+  margin-bottom: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 10px;
+}
+.payment label {
+  font-family: "Orbitron", sans-serif;
+}
+.payment input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+}
+
+input:required {
+  border: solid 1px #ff9070;
+}
+
+input:valid {
+  border: solid 1px grey;
+}
+
+input:invalid {
+  border: solid 1px red;
+}
+
+#submit {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: #f3a217;
+  margin-top: 20px;
   color: white;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 20pt;
-  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
-.card-solid-color img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 20px;
+#submit:hover {
+  background: #cc850b;
+}
+
+span {
+  color: red;
+  font-family: "Orbitron", sans-serif;
 }
 
 footer {
   width: 100vw;
+  height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #197bbd;
+  justify-content: center;
+  background: #a32400;
 }
 footer p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-size: 10pt;
   color: white;
 }
 
@@ -559,13 +664,10 @@ footer p {
 }
 
 @media only screen and (min-width: 48rem) {
-  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
-  header {
-    padding: 30px 0px 30px 0px;
-  }
-
-  .hero img {
-    height: 100%;
+  @import url("https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap");
+  nav {
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-md-lg {
@@ -575,35 +677,94 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background: #197bbd;
-    background: linear-gradient(0deg, #0d4063 0%, #197bbd 100%);
+    background: #a32400;
+    background: linear-gradient(0deg, #a32400 20%, #f3a217 100%);
   }
   .nav-md-lg a {
     width: 13%;
     height: 100%;
     text-decoration: none;
     color: white;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Orbitron", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+  .nav-md-lg a:hover {
+    background: linear-gradient(0deg, #d62f00 20%, #f6b547 100%);
   }
 
   .nav-sm {
     display: none;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+  .active {
+    background: linear-gradient(0deg, #d62f00 20%, #f6b547 100%);
   }
 
-  .card-solid-color img {
-    width: 60px;
+  #sub-nav {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 40px;
+  }
+  #sub-nav div {
+    width: 13%;
+  }
+
+  #sub-menu {
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    background: #a32400;
+  }
+  #sub-menu a {
+    width: 100%;
+    border-bottom: solid 1px white;
+    color: white;
+    text-decoration: none;
+    padding: 7px 0px 7px 0px;
+    font-family: "Orbitron", sans-serif;
+    transition: ease-in-out 0.2s;
+  }
+  #sub-menu a:hover {
+    background: #bd2a00;
+  }
+
+  main {
+    width: 95vw;
+    align-items: flex-start;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .info input {
+    width: 50%;
+  }
+
+  .swag input {
+    width: 50%;
+  }
+  .swag select {
+    width: 50%;
+  }
+
+  .payment input {
+    width: 50%;
+  }
+
+  #submit {
+    width: 50%;
   }
 }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+  @import url("https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap");
   header {
     width: 64rem;
   }
@@ -614,29 +775,6 @@ footer p {
 
   main {
     width: 64rem;
-  }
-
-  .hero {
-    width: 64rem;
-  }
-  .hero h3 {
-    margin-top: 350px;
-  }
-
-  .content {
-    width: 64rem;
-  }
-
-  .cards {
-    width: 64rem;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .card-solid-color h3 {
-    font-size: 16pt;
-  }
-  .card-solid-color p {
-    font-size: 32pt;
   }
 
   footer {

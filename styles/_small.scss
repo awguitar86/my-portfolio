@@ -23,22 +23,38 @@ html, body {
 
 header {
     width: 100vw;
-    padding: 20px 0px 20px 0px;
-    background: url('../images/headerimg.jpg') no-repeat;
-    background-position: 0% 5%;
-    h1, h3 {
-        margin: 0;
-        font-family: $font;
-        margin-left: 10px;
-        color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: black;
+        img {
+            width: 60px;
+            height: 100%;
+            margin-right: 10px;
+        }
+        h1 {
+            font-family: $font;
+            font-size: 18pt;
+        }
     }
 }
 
 nav {
     width: 100%;
     display: flex;
+    position: relative;
 }
 .nav-md-lg {
+    display: none;
+}
+#sub-nav {
     display: none;
 }
 .nav-sm {
@@ -46,7 +62,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;  
+    justify-content: flex-start;
     div {
         width: 100%;
         height: 40px;
@@ -54,7 +70,7 @@ nav {
         justify-content: flex-start;
         align-items: center;
         background: $prime;
-        background: linear-gradient(0deg, darken($prime, 20%) 0%, $prime 100%);
+        background: linear-gradient(0deg, $prime 20%, $second 100%);
         #menu {
             border: none;
             background: none;
@@ -84,15 +100,15 @@ nav {
         list-style: none;
         margin: 0;
         padding: 0;
-        border-top: solid 1px $second;
+        border-top: solid 1px white;
         transition: ease-in-out 0.2s;
         background: $prime;
-        li {
+        .dd-item {
             width: 100%;
             height: 50px;
-            border-bottom: solid 1px $second;
+            border-bottom: solid 1px white;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             a {
                 width: 100%;
@@ -101,14 +117,36 @@ nav {
                 color: white;
                 font-family: $font;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
+                padding-left: 20px;
             }
         }
     }
+    #dd-sub-menu {
+        width: 100%;
+        height: 120px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            width: 100%;
+            height: 40px;
+            font-family: $font;
+            color: white;
+            background: $prime;
+            border-bottom: solid 1px white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 40px;
+        }
+    }
 }
-.active {
-    background: darken($prime, 20%);
+#active {
+    background: darken($prime, 10%);
 }
 
 main {
@@ -116,96 +154,157 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-}
-
-.hero {
-    width: 100vw;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    h3 {
-        color: white;
-        font-family: $font;
-        position: absolute;
-        margin-left: 10px;
-        margin-top: 250px;
-    }
-    img {
-        width: 100%;
-        height: 300px;
-    }
-}
-
-.content {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
     h1 {
         font-family: $font;
-        width: 95%;
-        text-align: left;
     }
-}
-
-.cards {
-    width: 95vw;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.card-solid-color {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $prime;
-    transition: ease-in-out 0.2s;
-    cursor: pointer;
-    &:hover {
-        opacity: 0;
-    }
-    h3 {
-        color: white;
+    h2 {
         font-family: $font;
-        font-size: 20pt;
-        margin: 0;
     }
-    img {
-        width: 100px;
-        height: auto;
-        margin-bottom: 20px;
+}
+
+form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    h3 {
+        font-family: $font;
+        margin: 20px 0px 5px 0px;
     }
+}
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 10px;
+    label {
+        font-family: $font;
+    }
+    input {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        font-family: $font;
+    }
+}
+.swag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 10px;
+    label {
+        font-family: $font;
+    }
+    input {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        font-family: $font;
+    }
+    select {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 35px;
+        border: solid 1px grey;
+        border-radius: 5px;
+    }
+    #radio {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $font;
+        font-size: 10pt;
+        margin-top: 10px;
+        input {
+            width: 10px;
+            height: 5px;
+            margin-bottom: 0;
+            font-family: $font;
+        }
+    }
+}
+.payment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 10px;
+    label {
+        font-family: $font;
+    }
+    input {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        border: solid 1px grey;
+        border-radius: 5px;
+        font-family: $font;
+    }
+}
+
+input:required {
+    border: solid 1px lighten($prime, 40%);
+}
+input:valid {
+    border: solid 1px grey;
+}
+input:invalid {
+    border: solid 1px red;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: $second;
+    margin-top: 20px;
+    color: white;
+    font-family: $font;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    &:hover {
+        background: darken($second, 10%);
+    }
+}
+
+span {
+    color: red;
+    font-family: $font;
 }
 
 footer {
     width: 100vw;
+    height: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background: $prime;
     p {
         font-family: $font;
+        font-size: 10pt;
         color: white;
     }
 }
