@@ -364,6 +364,9 @@ header {
   padding-top: 20px;
   border-bottom: solid 1px #a8a8b2;
 }
+header img {
+  margin-left: 10px;
+}
 
 nav {
   width: 100vw;
@@ -658,6 +661,9 @@ footer .footer p {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap");
   header {
     width: 53rem;
+  }
+  header img {
+    margin-left: 0;
   }
 
   nav {
