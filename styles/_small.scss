@@ -196,31 +196,24 @@ main {
     border-radius: 5px;
     grid-area: ad;
 }
-
 .growth {
-    position: relative;
+    margin-top: 3px;
 }
+
 .growth-btn {
-    position: absolute;
-    z-index: 1000;
-    margin-bottom: 60px;
     width: 50%;
     height: 40px;
     color: white;
     background: $prime;
     border: none;
     border-radius: 5px;
+    margin-top: 8px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
     font-family: $font;
     &:hover {
         background: darken($prime, 10%);
     }
-}
-.growth-text {
-    position: absolute;
-    z-index: 1000;
-    margin-bottom: 20px;
 }
 
 footer {

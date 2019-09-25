@@ -536,31 +536,23 @@ main {
 }
 
 .growth {
-  position: relative;
+  margin-top: 3px;
 }
 
 .growth-btn {
-  position: absolute;
-  z-index: 1000;
-  margin-bottom: 60px;
   width: 50%;
   height: 40px;
   color: white;
   background: #0480b1;
   border: none;
   border-radius: 5px;
+  margin-top: 8px;
   cursor: pointer;
   transition: ease-in-out 0.2s;
   font-family: "Lato", sans-serif;
 }
 .growth-btn:hover {
   background: #035c7f;
-}
-
-.growth-text {
-  position: absolute;
-  z-index: 1000;
-  margin-bottom: 20px;
 }
 
 footer {
@@ -656,10 +648,6 @@ footer .footer p {
     grid-template-areas: "infra tech" "live ad";
   }
 
-  .growth-btn {
-    width: 25%;
-  }
-
   footer .clients {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, auto);
@@ -720,7 +708,6 @@ footer .footer p {
   .growth-btn {
     width: 150px;
     height: 30px;
-    margin-bottom: 45px;
   }
 
   .growth-text {
