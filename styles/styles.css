@@ -377,6 +377,7 @@ header a h2 {
   font-family: "Notable", sans-serif;
   color: #3a3a38;
   margin-left: 10px;
+  font-size: 15pt;
 }
 
 nav {
@@ -550,6 +551,10 @@ footer p {
 @media only screen and (min-width: 48rem) {
   @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
   @import url("https://fonts.googleapis.com/css?family=Notable&display=swap");
+  header a h2 {
+    font-size: 16pt;
+  }
+
   nav div {
     align-items: center;
     justify-content: flex-start;
