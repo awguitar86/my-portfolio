@@ -366,11 +366,12 @@ header {
 header a {
   width: 100%;
   display: flex;
+  align-items: center;
   text-decoration: none;
 }
 header a img {
   width: 40px;
-  height: auto;
+  height: 100%;
 }
 header a h2 {
   font-family: "Notable", sans-serif;
