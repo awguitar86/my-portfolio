@@ -4,118 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blue Ridge Studios</title>
+    <title>Final Capstone</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
-<!--comment-->
+
     <header>
-        <img src="./images/BlueRidgeLogo.png" alt="Blue Ridge Studios Logo">
+        <a href="./index.html">
+            <img src="./images/logo.svg" alt="Logo">
+            <h2>Cinema On Demand</h2>
+        </a>
     </header>
 
     <nav>
         <div>
-            <img src="./images/home.svg" alt="home icon">
-            <p>HOME</p>
-        </div>
-        <div>
-            <img src="./images/folder.svg" alt="portfolio icon">
-            <p>PORTFOLIO</p>
-        </div>
-        <div>
-            <img src="./images/phone.svg" alt="phone icon">
-            <p>CONTACT</p>
+            <a href="./index.html" id="active">SEARCH</a>
+            <a href="./category.html">CATEGORY</a>
+            <a href="./account.html">ACCOUNT</a>
         </div>
     </nav>
 
     <main>
-        <section class="hero">
-            <img src="./images/hero.jpg" alt="hero image" class="heroLg">
-            <img src="./images/heroSm.jpg" alt="hero image" class="heroSm">
-        </section>
-        <section class="black-section">
-            <div class="black-wrap">
-                <div class="black-1">
-                    <h2>EXPECT THE BEST</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <ul>
-                        <li>Mobile First Design</li>
-                        <li>Masterful Graphics</li>
-                        <li>Modern Designs</li>
-                        <li>Marketing</li>
-                    </ul>
-                </div>
-                <div class="black-2">
-                    <h2>OUR FORMULA</h2>
-                    <p class="black-p-lg">Development<br/>+ Deployment<br/>+ Design</p>
-                    <p class="black-p-sm">Development + Deployment + Design</p>
-                    <h2>SUCCESS</h2>
-                </div>
+        <h1>SEARCH</h1>
+        <input type="text" class="search" placeholder="Search Movies...">
+        <div class="ratings">
+            <div>
+                <input type="checkbox" name="G">
+                <label for="G">G</label>
             </div>
-        </section>
-        <section class="more-about">
-            <h1>MORE ABOUT US</h1>
-            <div class="more-wrap">
-                <div>
-                    <img src="./images/persistance.jpg" alt="Man on Computer">
-                    <h3>Our Persistance</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div>
-                    <img src="./images/process.jpg" alt="person touching icons">
-                    <h3>Our Process</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div>
-                    <img src="./images/people.jpg" alt="people at a table talking">
-                    <h3>Our People</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div>
-                    <img src="./images/payoff.jpg" alt="hands tossing laptop, phone,and world.">
-                    <h3>Our Payoff</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+            <div>
+                <input type="checkbox" name="PG">
+                <label for="PG">PG</label>
             </div>
-        </section>
-        <section class="bottom">
-            <div id=infra>
-                <img src="./images/infrastructure.jpg" alt="infrastructure graphic">
-                <h3>Infrastructure</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+                <input type="checkbox" name="PG-13">
+                <label for="PG-13">PG-13</label>
             </div>
-            <div id="tech">
-                <img src="./images/technology.jpg" alt="technology graphic">
-                <h3>Technology</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+                <input type="checkbox" name="R">
+                <label for="R">R</label>
             </div>
-            <div id="ad">
-                <img src="./images/ad.jpg" alt="growth ad" class="growth">
-                <button class="growth-btn">SEE PRICING</button>
-                <p class="growth-text">Company Growth 2012 - 2016</p>
+        </div>
+        <div class="search-results">
+            <div>
+                <img src="./images/hobbit.jpg" alt="hobbit">
+                <h3>The Hobbit</h3>
             </div>
-            <div id="live">
-                <h3>Live 24/7 Technical Support</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+            <div>
+                <img src="./images/ironman.jpg" alt="iron man">
+                <h3>Iron Man 3</h3>
             </div>
-        </section>
+            <div>
+                <img src="./images/matrix.jpg" alt="Matrix">
+                <h3>The Matrix</h3>
+            </div>
+            <div>
+                <img src="./images/shawshank.jpg" alt="Shawshank">
+                <h3>Shawshank Redemption</h3>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="clients">
-            <img src="./images/cvsLogo.png" alt="CVS Logo">
-            <img src="./images/walmartLogo.png" alt="Walmart logo">
-            <img src="./images/mckessonLogo.png" alt="McKesson logo">
-            <img src="./images/exonLogo.png" alt="ExonMobil logo">
-            <img src="./images/berkshireLogo.png" alt="Berkshire Hathaway logo">
-            <img src="./images/fordLogo.png" alt="Ford logo">
-        </div>
-        <div class="footer">
-            <p>Call at 1-800-555-1234</p>
-        </div>
+        <p>©2019 Austin Wright &bull; Login</p>
     </footer>
     
 </body>

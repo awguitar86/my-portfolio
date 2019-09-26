@@ -1,74 +1,46 @@
 @import './variables';
 
 header {
-    width: 53rem;
-    img {
-        margin-left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        width: 75rem;
     }
 }
 
 nav {
-    width: 53rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     div {
-        width: 15%;
-    }
-}
-
-.hero {
-    width: 53rem;
-}
-
-.black-wrap {
-    width: 53rem;
-}
-.black-1 {
-    width: 75%;
-}
-.black-2 {
-    width: 25%;
-}
-
-.more-about {
-    width: 53rem;
-}
-.more-wrap {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
-    div {
-        p {
-            font-size: 10pt;
+        width: 75rem;
+        a {
+            width: 10%;
         }
     }
 }
-.bottom {
-    width: 53rem;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "infra tech ad" 
-        "live live ad";
-    div {
-        p {
-            font-size: 10pt;
-        }
+
+main {
+    width: 75rem;
+    align-items: flex-start;
+    h1 {
+        width: 100%
     }
-}
-.growth-btn {
-    width: 150px;
-    height: 30px;
-}
-.growth-text {
-    font-size: 10pt;
+    .search {
+        width: 50%;
+    }
 }
 
-footer {
-    .clients {
-        width: 53rem;
-    }
-    .footer {
-        justify-content: center;
-        p {
-            width: 53rem;
-        }
-    }
+.search-results {
+    width: 100%;
+}
+
+#categories {
+    width: 30%;
+}
+
+.account {
+    width: 50%;
 }
