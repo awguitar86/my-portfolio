@@ -95,10 +95,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    div{
-        label {
-            font-family: $font;
-            font-size: 14pt;
+    label {
+        font-family: $font;
+        font-size: 14pt;
+        input {
+            margin-left: 5px;
         }
     }
 }

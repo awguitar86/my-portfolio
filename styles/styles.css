@@ -436,9 +436,12 @@ main .search {
   align-items: center;
   justify-content: space-between;
 }
-.ratings div label {
+.ratings label {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14pt;
+}
+.ratings label input {
+  margin-left: 5px;
 }
 
 .search-results {
@@ -569,7 +572,7 @@ footer p {
     align-items: center;
     justify-content: flex-start;
   }
-  .ratings div label {
+  .ratings label {
     margin-right: 30px;
   }
 
