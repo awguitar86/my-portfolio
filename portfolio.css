@@ -153,12 +153,6 @@ header div h3 {
   border-bottom: solid 1px #040404;
   padding-top: 50px;
 }
-#projects-top h2 a {
-  color: #D7D9CE;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
-  border-bottom: solid #D7D9CE 1px;
-}
 
 .project-top-body {
   width: 1400px;
@@ -267,6 +261,13 @@ header div h3 {
   align-items: center;
   justify-content: flex-end;
   margin-left: -8px;
+}
+
+.projects-bottom h2 a {
+  color: #040404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  border-bottom: solid #040404 1px;
 }
 
 .project-bottom-body {
