@@ -397,18 +397,19 @@ header div h3 {
   justify-content: space-around;
   align-items: center;
   width: 1000px;
-  height: 340px;
   margin-bottom: 40px;
+  padding: 40px 10px 40px 10px;
 }
 .about-info img {
-  width: 230px;
+  width: 200px;
   height: auto;
   border-radius: 12pc;
 }
-.about-info p {
+.about-info ul {
+  width: 70%;
   color: #D7D9CE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 16pt;
   margin: 0;
 }
@@ -765,7 +766,7 @@ header div h3 {
   .about-info img {
     width: 200px;
   }
-  .about-info p {
+  .about-info ul {
     font-size: 14pt;
   }
 
@@ -839,16 +840,16 @@ header div h3 {
   }
 
   .about-info {
-    height: 450px;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .about-info img {
-    margin-top: 20px;
+    margin-bottom: 30px;
   }
-  .about-info p {
+  .about-info ul {
     margin-bottom: 20px;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 620px) {
@@ -1016,7 +1017,7 @@ header div h3 {
     height: auto;
   }
 
-  .about-info p {
+  .about-info ul {
     font-size: 12pt;
   }
 }
@@ -1082,10 +1083,6 @@ header div h3 {
     height: auto;
   }
 
-  .about-info p {
-    font-size: 10pt;
-  }
-
   .job-break {
     width: 260px;
   }
@@ -1129,8 +1126,8 @@ header div h3 {
     height: 500px;
   }
 
-  .about-info p {
-    font-size: 9pt;
+  .about-info ul {
+    font-size: 10pt;
   }
 }
 @media only screen and (max-width: 320px) {
