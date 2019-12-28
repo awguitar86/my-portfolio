@@ -937,6 +937,7 @@ header div h3 {
 
   #projects-top {
     height: 850px;
+    justify-content: center;;
   }
 
   .project-top-body {
@@ -979,7 +980,7 @@ header div h3 {
   }
 
   .projects-bottom {
-    height: 750px;
+    height: 800px;
   }
 
   .project-bottom-body {
